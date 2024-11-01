@@ -1,0 +1,2520 @@
+# Copyright (C) 2024 Time Slot Booking
+# This file is distributed under the same license as the Time Slot plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Time Slot 1.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/timeslot\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-18T02:46:46+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: timeslot\n"
+
+#. Plugin Name of the plugin
+#: admin/inc/beaver-builder/register.php:25
+#: admin/inc/elementor/form.php:53
+msgid "Time Slot"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://timeslotplugins.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Book appointments online directly from your website with an easy to use plugin and simple booking form."
+msgstr ""
+
+#. Author of the plugin
+msgid "Time Slot Booking"
+msgstr ""
+
+#: admin/inc/beaver-builder/register.php:23
+msgid "Time Slot Booking Form"
+msgstr ""
+
+#: admin/inc/beaver-builder/register.php:24
+msgid "Add the Time Slot booking form to your page or post"
+msgstr ""
+
+#: admin/inc/elementor/form.php:25
+msgid "Booking Form"
+msgstr ""
+
+#: admin/inc/elementor/form.php:37
+msgid "form"
+msgstr ""
+
+#: admin/inc/elementor/form.php:37
+msgid "booking"
+msgstr ""
+
+#: admin/inc/elementor/form.php:60
+#: admin/pages/tables/appointments.php:42
+#: admin/pages/tables/coupons.php:30
+#: admin/pages/tables/customers.php:30
+#: admin/pages/tables/payments.php:44
+#: admin/pages/tables/services.php:75
+#: admin/pages/tables/staff.php:39
+msgid "ID"
+msgstr ""
+
+#: admin/inc/elementor/form.php:62
+msgid "my-id"
+msgstr ""
+
+#: admin/inc/elementor/form.php:70
+msgid "Class"
+msgstr ""
+
+#: admin/inc/elementor/form.php:72
+msgid "my-class"
+msgstr ""
+
+#: admin/inc/media-uploader.php:26
+msgid "Upload"
+msgstr ""
+
+#: admin/inc/media-uploader.php:50
+msgid "Upload Image"
+msgstr ""
+
+#: admin/inc/media-uploader.php:55
+msgid "Remove Image"
+msgstr ""
+
+#: admin/inc/media-uploader.php:65
+msgid "Confirm Image Removal"
+msgstr ""
+
+#: admin/inc/media-uploader.php:71
+msgid "Are you sure you want to remove this image?"
+msgstr ""
+
+#: admin/inc/media-uploader.php:75
+#: admin/pages/tables/payments.php:130
+msgid "No, Close Dialog"
+msgstr ""
+
+#: admin/inc/media-uploader.php:75
+#: admin/pages/tables/build-table.php:101
+#: admin/pages/tables/payments.php:130
+msgid "No"
+msgstr ""
+
+#: admin/inc/media-uploader.php:76
+msgid "Yes, Remove Image"
+msgstr ""
+
+#: admin/inc/media-uploader.php:76
+#: admin/pages/tables/build-table.php:102
+#: admin/pages/tables/payments.php:131
+msgid "Yes"
+msgstr ""
+
+#: admin/init/general.php:37
+msgid "Appointment Booking Plugin for WordPress"
+msgstr ""
+
+#: admin/init/general.php:42
+#: inc/src/AdminPages.php:95
+msgid "Import/Export"
+msgstr ""
+
+#: admin/init/general.php:79
+msgid "Settings"
+msgstr ""
+
+#: admin/init/general.php:83
+#: inc/src/AdminPages.php:51
+msgid "Docs"
+msgstr ""
+
+#: admin/init/general.php:87
+#: inc/src/AdminPages.php:57
+msgid "Get Pro"
+msgstr ""
+
+#: admin/init/menu-pages.php:87
+msgid "Overview"
+msgstr ""
+
+#: admin/init/menu-pages.php:94
+#: admin/pages/dashboard.php:21
+#: admin/pages/tables/appointments.php:39
+#: admin/js/tables/appointments.js:15
+msgid "Appointments"
+msgstr ""
+
+#: admin/init/menu-pages.php:98
+#: admin/pages/dashboard.php:32
+msgid "Business Settings"
+msgstr ""
+
+#: admin/init/menu-pages.php:102
+#: admin/pages/dashboard.php:42
+msgid "General Settings"
+msgstr ""
+
+#: admin/pages/dashboard.php:24
+msgid "View or edit your appointments"
+msgstr ""
+
+#: admin/pages/dashboard.php:25
+msgid "View or edit your customers"
+msgstr ""
+
+#: admin/pages/dashboard.php:26
+msgid "View or edit your payments"
+msgstr ""
+
+#: admin/pages/dashboard.php:27
+msgid "Coupon codes to use at checkout"
+msgstr ""
+
+#: admin/pages/dashboard.php:34
+msgid "Services you offer"
+msgstr ""
+
+#: admin/pages/dashboard.php:35
+msgid "Available team members"
+msgstr ""
+
+#: admin/pages/dashboard.php:36
+msgid "Notifications for staff and customers"
+msgstr ""
+
+#: admin/pages/dashboard.php:37
+msgid "Location and contact info"
+msgstr ""
+
+#: admin/pages/dashboard.php:38
+msgid "Hours and days off"
+msgstr ""
+
+#: admin/pages/dashboard.php:45
+msgid "Miscellaneous settings"
+msgstr ""
+
+#: admin/pages/dashboard.php:46
+msgid "Set up your payment currency"
+msgstr ""
+
+#: admin/pages/dashboard.php:47
+msgid "Styles for the booking form"
+msgstr ""
+
+#: admin/pages/dashboard.php:48
+msgid "Import or export plugin settings"
+msgstr ""
+
+#: admin/pages/dashboard.php:52
+msgid "Set Up Guide"
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com/docs
+#: admin/pages/dashboard.php:78
+msgid "<p>Copy and paste this shortcode into your content to show the Time Slot booking form. For more information, visit the <a href=\"%s\" target=\"_blank\">Time Slot documentation</a>.</p>"
+msgstr ""
+
+#: admin/pages/dashboard.php:85
+msgid "Shortcode:"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:29
+msgid "Buttons"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:34
+#: admin/pages/settings/appearance.php:80
+msgid "Background Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:39
+msgid "Background Hover Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:44
+#: admin/pages/settings/appearance.php:85
+#: admin/pages/settings/appearance.php:164
+#: admin/pages/settings/appearance.php:180
+msgid "Text Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:49
+msgid "Text Hover Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:54
+#: admin/pages/settings/appearance.php:90
+#: admin/pages/settings/appearance.php:116
+#: admin/pages/settings/appearance.php:185
+msgid "Font"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:59
+#: admin/pages/settings/appearance.php:95
+msgid "Border"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:64
+msgid "Button Border Hover Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:69
+#: admin/pages/settings/appearance.php:100
+msgid "Border Radius"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:75
+msgid "Input Fields"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:106
+msgid "Labels"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:111
+msgid "Label Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:122
+msgid "Placeholders"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:127
+msgid "Placeholder Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:133
+msgid "Accent"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:138
+msgid "Accent Background Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:143
+msgid "Accent Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:149
+msgid "Summary"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:154
+msgid "Heading Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:159
+msgid "Heading Font"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:169
+msgid "Text Font"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:175
+#: admin/pages/settings/general.php:56
+msgid "Success Message"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:225
+msgid "Appearance"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:226
+msgid "Set the appearance of the appointment form."
+msgstr ""
+
+#: admin/pages/settings/appearance.php:289
+msgid "Font Size in Pixels"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:295
+#: admin/js/select2.js:35
+msgid "Font Family"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:299
+msgid "Inherit"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:318
+#: admin/js/select2.js:42
+msgid "Font Weight"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:364
+msgid "Border Width in Pixels"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:369
+#: admin/js/select2.js:49
+msgid "Border Style"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:389
+msgid "Border Color"
+msgstr ""
+
+#: admin/pages/settings/appearance.php:405
+msgid "Border Radius in Pixels"
+msgstr ""
+
+#: admin/pages/settings/company.php:29
+msgid "Company Information"
+msgstr ""
+
+#: admin/pages/settings/company.php:34
+#: languages/ts-tinymce-lang.php:26
+msgid "Company Logo"
+msgstr ""
+
+#: admin/pages/settings/company.php:39
+#: admin/pages/settings/email.php:432
+#: languages/ts-tinymce-lang.php:27
+msgid "Company Name"
+msgstr ""
+
+#: admin/pages/settings/company.php:44
+#: admin/pages/tables/customers.php:33
+#: admin/pages/tables/customers.php:53
+#: admin/pages/tables/staff.php:41
+#: public/form/shortcode.php:124
+#: public/form/shortcode.php:125
+#: admin/inc/blocks/timeslot-block.js:174
+#: admin/inc/blocks/timeslot-block.js:175
+msgid "Phone"
+msgstr ""
+
+#: admin/pages/settings/company.php:49
+#: admin/pages/settings/email.php:417
+#: admin/pages/tables/customers.php:32
+#: admin/pages/tables/customers.php:47
+#: admin/pages/tables/staff.php:42
+#: public/form/shortcode.php:121
+#: public/form/shortcode.php:122
+#: admin/inc/blocks/timeslot-block.js:167
+#: admin/inc/blocks/timeslot-block.js:168
+msgid "Email"
+msgstr ""
+
+#: admin/pages/settings/company.php:54
+msgid "Website"
+msgstr ""
+
+#: admin/pages/settings/company.php:60
+msgid "Address"
+msgstr ""
+
+#: admin/pages/settings/company.php:65
+msgid "Street Address"
+msgstr ""
+
+#: admin/pages/settings/company.php:70
+msgid "Street Address 2"
+msgstr ""
+
+#: admin/pages/settings/company.php:75
+msgid "City"
+msgstr ""
+
+#: admin/pages/settings/company.php:80
+msgid "State"
+msgstr ""
+
+#: admin/pages/settings/company.php:85
+msgid "Zip Code"
+msgstr ""
+
+#: admin/pages/settings/company.php:126
+#: languages/ts-tinymce-lang.php:28
+msgid "Company"
+msgstr ""
+
+#: admin/pages/settings/company.php:127
+msgid "Contact information for your business."
+msgstr ""
+
+#: admin/pages/settings/email.php:69
+msgid "Email Information"
+msgstr ""
+
+#: admin/pages/settings/email.php:74
+msgid "Sender Name"
+msgstr ""
+
+#: admin/pages/settings/email.php:79
+msgid "Sender Email"
+msgstr ""
+
+#: admin/pages/settings/email.php:85
+msgid "Customer Emails"
+msgstr ""
+
+#: admin/pages/settings/email.php:90
+#: admin/pages/settings/email.php:126
+msgid "Approved Appointment"
+msgstr ""
+
+#: admin/pages/settings/email.php:95
+#: admin/pages/settings/email.php:131
+msgid "Approved Subject"
+msgstr ""
+
+#: admin/pages/settings/email.php:100
+#: admin/pages/settings/email.php:136
+msgid "Approved Message"
+msgstr ""
+
+#: admin/pages/settings/email.php:105
+#: admin/pages/settings/email.php:141
+msgid "Canceled Appointment"
+msgstr ""
+
+#: admin/pages/settings/email.php:110
+#: admin/pages/settings/email.php:146
+msgid "Canceled Subject"
+msgstr ""
+
+#: admin/pages/settings/email.php:115
+#: admin/pages/settings/email.php:151
+msgid "Canceled Message"
+msgstr ""
+
+#: admin/pages/settings/email.php:121
+msgid "Staff Emails"
+msgstr ""
+
+#: admin/pages/settings/email.php:341
+msgid "Email Subject"
+msgstr ""
+
+#: admin/pages/settings/email.php:403
+msgid "No Staff Available"
+msgstr ""
+
+#: admin/pages/settings/email.php:418
+msgid "Send email to staff and customers when appointments are approved or canceled."
+msgstr ""
+
+#: admin/pages/settings/email.php:446
+msgid "Sender Email Address"
+msgstr ""
+
+#. translators: Placeholder is company name
+#: admin/pages/settings/email.php:477
+msgid "%s Test Email"
+msgstr ""
+
+#: admin/pages/settings/general.php:33
+msgid "Appointment Settings"
+msgstr ""
+
+#: admin/pages/settings/general.php:39
+msgid "Minimum Time Before Booking"
+msgstr ""
+
+#: admin/pages/settings/general.php:45
+msgid "Appointment Form Fields"
+msgstr ""
+
+#: admin/pages/settings/general.php:51
+msgid "Summary Message"
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com/docs
+#: admin/pages/settings/general.php:98
+msgid "<p class=\"ts-subtitle\">Copy and paste this shortcode into your content to show the Time Slot booking form. For more information, visit the <a href=\"%s\" target=\"_blank\">Time Slot documentation</a>.</p>"
+msgstr ""
+
+#: admin/pages/settings/general.php:101
+msgid "General"
+msgstr ""
+
+#: admin/pages/settings/general.php:110
+msgid "Shortcode: "
+msgstr ""
+
+#: admin/pages/settings/general.php:126
+#: admin/js/tables/services.js:317
+msgid "Hours"
+msgstr ""
+
+#: admin/pages/settings/hours.php:34
+msgid "Holidays"
+msgstr ""
+
+#: admin/pages/settings/hours.php:65
+msgid "Business Hours"
+msgstr ""
+
+#: admin/pages/settings/hours.php:66
+msgid "Hours of Operation"
+msgstr ""
+
+#: admin/pages/settings/hours.php:67
+msgid "The hours of operation and holiday days off for your business."
+msgstr ""
+
+#: admin/pages/settings/hours.php:68
+msgid "Business Hours Info"
+msgstr ""
+
+#: admin/pages/settings/hours.php:81
+msgid "The default business hours are 9am to 5pm daily."
+msgstr ""
+
+#: admin/pages/settings/hours.php:126
+msgid " Start Time"
+msgstr ""
+
+#: admin/pages/settings/hours.php:127
+msgid " End Time"
+msgstr ""
+
+#: admin/pages/settings/hours.php:128
+msgid "Break"
+msgstr ""
+
+#. translators: %s is a placeholder for day name
+#: admin/pages/settings/hours.php:130
+msgid "Closed every %s"
+msgstr ""
+
+#: admin/pages/settings/hours.php:146
+#: admin/pages/settings/hours.php:170
+msgid "to"
+msgstr ""
+
+#: admin/pages/settings/hours.php:153
+msgid "Closed"
+msgstr ""
+
+#: admin/pages/settings/hours.php:182
+msgid "Add or remove additional days when your business will be closed."
+msgstr ""
+
+#: admin/pages/settings/hours.php:207
+#: public/form/shortcode.php:110
+#: admin/inc/blocks/timeslot-block.js:142
+msgid "Select Date"
+msgstr ""
+
+#: admin/pages/settings/hours.php:212
+msgid "Annual"
+msgstr ""
+
+#: admin/pages/settings/hours.php:213
+msgid "Date closed annually"
+msgstr ""
+
+#: admin/pages/settings/hours.php:217
+msgid "Remove Holiday"
+msgstr ""
+
+#: admin/pages/settings/hours.php:229
+#: admin/pages/settings/hours.php:231
+msgid "Add Holiday"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:26
+msgid "Import / Export Settings"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:27
+msgid "Export Settings"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:28
+msgid "Export the Time Slot plugin settings."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:33
+msgid "Export"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:39
+msgid "Import Settings"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:40
+msgid "Import the Time Slot plugin settings from a .json file."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:51
+msgid "Error:"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:58
+msgid "Settings imported successfully"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:69
+msgid "Import"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:177
+msgid "Please upload a file to import"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:185
+msgid "Please upload a JSON file"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:190
+msgid "Please upload a valid JSON file"
+msgstr ""
+
+#: admin/pages/settings/import-export.php:195
+msgid "The file is too large."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:202
+msgid "The JSON data is invalid."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:207
+msgid "The JSON file is invalid."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:212
+msgid "The JSON data array is invalid."
+msgstr ""
+
+#: admin/pages/settings/import-export.php:217
+msgid "The settings data is invalid."
+msgstr ""
+
+#: admin/pages/settings/payment.php:33
+msgid "Pay Locally"
+msgstr ""
+
+#: admin/pages/settings/payment.php:45
+msgid "Currency Code"
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com
+#: admin/pages/settings/payment.php:99
+msgid "Accept payments in person, or check out <a href=\"%s\" target=\"_blank\">Time Slot Pro</a> to accept payments online."
+msgstr ""
+
+#: admin/pages/settings/payment.php:102
+msgid "Payment Methods"
+msgstr ""
+
+#: admin/pages/settings/payment.php:138
+msgid "Currency"
+msgstr ""
+
+#: admin/pages/settings/payment.php:151
+msgid "Australian dollar (AUD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:152
+msgid "Brazilian real (BRL)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:153
+msgid "Canadian dollar (CAD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:154
+msgid "Chinese renmenbi (CNY)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:155
+msgid "Czech koruna (CZK)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:156
+msgid "Danish krone (DKK)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:157
+msgid "Euro (EUR)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:158
+msgid "Hong Kong dollar (HKD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:159
+msgid "Hungarian forint (HUF)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:160
+msgid "Indian rupee (INR)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:161
+msgid "Israeli new shekel (ILS)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:162
+msgid "Japanese yen (JPY)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:163
+msgid "Malaysian ringgit (MYR)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:164
+msgid "Mexican peso (MXN)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:165
+msgid "Moroccan dirham (MAD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:166
+msgid "New Taiwan dollar (TWD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:167
+msgid "New Zealand dollar (NZD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:168
+msgid "Norwegian krone (NOK)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:169
+msgid "Philippine peso (PHP)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:170
+msgid "Polish złoty (PLN)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:171
+msgid "Pound sterling (GBP)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:172
+msgid "Russian ruble (RUB)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:173
+msgid "Singapore dollar (SGD)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:174
+msgid "South African rand (ZAR)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:175
+msgid "Swedish krona (SEK)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:176
+msgid "Swiss franc (CHF)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:177
+msgid "Thai baht (THB)"
+msgstr ""
+
+#: admin/pages/settings/payment.php:178
+msgid "United States dollar (USD)"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:43
+#: admin/pages/tables/appointments.php:89
+msgid "Date"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:44
+msgid "Time"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:45
+#: admin/pages/tables/services.php:76
+#: languages/ts-tinymce-lang.php:29
+#: public/form/shortcode.php:65
+#: admin/inc/blocks/timeslot-block.js:126
+msgid "Service"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:46
+#: admin/pages/tables/staff.php:36
+#: languages/ts-tinymce-lang.php:30
+#: public/form/shortcode.php:103
+#: admin/inc/blocks/timeslot-block.js:29
+msgid "Staff"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:47
+#: admin/pages/tables/payments.php:47
+msgid "Customer"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:48
+#: admin/pages/tables/coupons.php:34
+#: admin/pages/tables/payments.php:49
+msgid "Status"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:49
+msgid "Date Alt"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:58
+#: inc/src/MultilangStrings.php:30
+msgid "Approved"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:59
+#: admin/pages/tables/appointments.php:272
+#: admin/js/tables/appointments.js:227
+msgid "Canceled"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:84
+#: admin/js/tables/all-tables.js:30
+msgid "appointment"
+msgstr ""
+
+#: admin/pages/tables/appointments.php:96
+msgid "Start Time"
+msgstr ""
+
+#. translators: %s is a placeholder for the page title
+#: admin/pages/tables/build-table.php:18
+msgid "Add %s"
+msgstr ""
+
+#. translators: %s is a placeholder for the page title
+#: admin/pages/tables/build-table.php:20
+msgid "Delete %s"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:40
+msgid "Add"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:47
+msgid "Select all rows"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:75
+msgid "Delete"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:94
+msgid "Confirm row removal"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:101
+msgid "No, close dialog"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:102
+msgid "Yes, delete row"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:211
+msgid "Details"
+msgstr ""
+
+#. translators: %s is a placeholder for the page title
+#: admin/pages/tables/build-table.php:213
+msgid "Edit %s details"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:222
+#: admin/pages/tables/build-table.php:240
+#: admin/pages/tables/services.php:173
+#: admin/pages/tables/services.php:189
+msgid "Close"
+msgstr ""
+
+#: admin/pages/tables/build-table.php:241
+#: inc/src/AdminPages.php:140
+msgid "Save Changes"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:27
+#: admin/js/tables/coupons.js:15
+msgid "Coupons"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:31
+#: public/form/shortcode.php:143
+msgid "Coupon Code"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:32
+msgid "Discount Amount"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:33
+msgid "Discount Type"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:38
+#: inc/src/MultilangStrings.php:34
+#: admin/js/tables/coupons.js:22
+msgid "Percentage"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:39
+#: inc/src/MultilangStrings.php:35
+msgid "Flat Rate"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:43
+#: inc/src/MultilangStrings.php:29
+msgid "Active"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:44
+msgid "Disabled"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:48
+#: admin/js/tables/all-tables.js:33
+msgid "coupon"
+msgstr ""
+
+#: admin/pages/tables/coupons.php:72
+msgid "Coupon Status"
+msgstr ""
+
+#: admin/pages/tables/customers.php:27
+#: admin/js/tables/customers.js:17
+msgid "Customers"
+msgstr ""
+
+#: admin/pages/tables/customers.php:31
+#: admin/pages/tables/customers.php:41
+#: admin/pages/tables/staff.php:40
+#: public/form/shortcode.php:119
+#: admin/inc/blocks/timeslot-block.js:160
+#: admin/inc/blocks/timeslot-block.js:161
+msgid "Name"
+msgstr ""
+
+#: admin/pages/tables/customers.php:37
+#: admin/js/tables/all-tables.js:31
+msgid "customer"
+msgstr ""
+
+#: admin/pages/tables/payments.php:30
+#: admin/pages/tables/payments.php:45
+msgid "Amount"
+msgstr ""
+
+#: admin/pages/tables/payments.php:41
+#: admin/js/tables/payments.js:27
+msgid "Payments"
+msgstr ""
+
+#: admin/pages/tables/payments.php:46
+msgid "Created"
+msgstr ""
+
+#: admin/pages/tables/payments.php:48
+msgid "Source"
+msgstr ""
+
+#: admin/pages/tables/payments.php:50
+msgid "Coupon"
+msgstr ""
+
+#: admin/pages/tables/payments.php:51
+#: admin/js/tables/payments.js:28
+msgid "Refund"
+msgstr ""
+
+#: admin/pages/tables/payments.php:52
+msgid "Edit"
+msgstr ""
+
+#: admin/pages/tables/payments.php:56
+#: inc/src/MultilangStrings.php:31
+msgid "Complete"
+msgstr ""
+
+#: admin/pages/tables/payments.php:57
+#: admin/js/tables/payments.js:145
+#: admin/js/tables/payments.js:170
+msgid "Refunded"
+msgstr ""
+
+#: admin/pages/tables/payments.php:61
+#: admin/js/tables/all-tables.js:32
+msgid "payment"
+msgstr ""
+
+#: admin/pages/tables/payments.php:123
+msgid "Confirm"
+msgstr ""
+
+#: admin/pages/tables/payments.php:131
+msgid "Yes, Continue"
+msgstr ""
+
+#: admin/pages/tables/payments.php:145
+msgid "Accept and Close"
+msgstr ""
+
+#: admin/pages/tables/payments.php:145
+msgid "OK"
+msgstr ""
+
+#: admin/pages/tables/services.php:49
+msgid "Remove Category"
+msgstr ""
+
+#: admin/pages/tables/services.php:61
+msgid "Add Category"
+msgstr ""
+
+#: admin/pages/tables/services.php:72
+#: admin/pages/tables/staff.php:43
+#: admin/js/tables/services.js:18
+msgid "Services"
+msgstr ""
+
+#: admin/pages/tables/services.php:77
+#: admin/pages/tables/services.php:93
+msgid "Price"
+msgstr ""
+
+#: admin/pages/tables/services.php:78
+msgid "Duration"
+msgstr ""
+
+#: admin/pages/tables/services.php:79
+msgid "Before"
+msgstr ""
+
+#: admin/pages/tables/services.php:80
+msgid "Category"
+msgstr ""
+
+#: admin/pages/tables/services.php:81
+#: admin/pages/tables/staff.php:45
+msgid "Visibility"
+msgstr ""
+
+#: admin/pages/tables/services.php:82
+msgid "Notes"
+msgstr ""
+
+#: admin/pages/tables/services.php:86
+#: admin/pages/tables/staff.php:60
+#: inc/src/MultilangStrings.php:33
+msgid "Visible"
+msgstr ""
+
+#: admin/pages/tables/services.php:87
+#: admin/pages/tables/staff.php:61
+msgid "Hidden"
+msgstr ""
+
+#: admin/pages/tables/services.php:108
+#: admin/js/tables/all-tables.js:34
+msgid "service"
+msgstr ""
+
+#: admin/pages/tables/services.php:134
+msgid "Before Service"
+msgstr ""
+
+#: admin/pages/tables/services.php:172
+msgid "Service Categories"
+msgstr ""
+
+#: admin/pages/tables/services.php:174
+msgid "Add and remove service categories"
+msgstr ""
+
+#: admin/pages/tables/services.php:183
+msgid "Save Categories"
+msgstr ""
+
+#: admin/pages/tables/staff.php:44
+msgid "Days Off"
+msgstr ""
+
+#: admin/pages/tables/staff.php:46
+msgid "Info"
+msgstr ""
+
+#: admin/pages/tables/staff.php:50
+msgid "Monday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:51
+msgid "Tuesday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:52
+msgid "Wednesday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:53
+msgid "Thursday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:54
+msgid "Friday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:55
+msgid "Saturday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:56
+msgid "Sunday"
+msgstr ""
+
+#: admin/pages/tables/staff.php:65
+msgid "staff"
+msgstr ""
+
+#: inc/src/AdminPages.php:45
+msgid "Visit the Time Slot website"
+msgstr ""
+
+#: inc/src/AdminPages.php:54
+msgid "Contact"
+msgstr ""
+
+#. translators: Placeholder is URL
+#: inc/src/AdminPages.php:74
+msgid " Please set your site timezone to a city name on the <a href=\"%s\">WordPress General settings page</a>."
+msgstr ""
+
+#: inc/src/AdminPages.php:143
+#: admin/js/ajax-save.js:195
+#: admin/js/tinymce.js:183
+msgid "Settings Saved"
+msgstr ""
+
+#: inc/src/DaysOff.php:109
+#: public/form/staff.php:86
+#: public/form/times.php:69
+#: public/js/ts-form.js:212
+msgid "Any Staff Member"
+msgstr ""
+
+#: inc/src/MultilangStrings.php:32
+#: admin/js/tables/services.js:119
+msgid "None"
+msgstr ""
+
+#: languages/strings.php:14
+msgid "Your license key has been disabled."
+msgstr ""
+
+#. translators: the license key expiration date
+#: languages/strings.php:16
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: languages/strings.php:17
+msgid "Invalid license."
+msgstr ""
+
+#: languages/strings.php:18
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#. translators: the plugin name
+#: languages/strings.php:20
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: languages/strings.php:21
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: languages/strings.php:22
+msgid "An error occurred, please try again."
+msgstr ""
+
+#. translators: the plugin name
+#: languages/strings.php:24
+msgid "There is a new version of %1$s available."
+msgstr ""
+
+#: languages/strings.php:25
+msgid "Contact your network administrator to install the update."
+msgstr ""
+
+#. translators: 1. opening anchor tag, do not translate 2. the new plugin version 3. closing anchor tag, do not translate.
+#: languages/strings.php:27
+msgid "%1$sView version %2$s details%3$s."
+msgstr ""
+
+#. translators: 1 & 4 opening anchor tags, do not translate 2. the new plugin version 3 & 5 closing anchor tags, do not translate.
+#: languages/strings.php:29
+msgid "%1$sView version %2$s details%3$s or %4$supdate now%5$s."
+msgstr ""
+
+#: languages/strings.php:30
+msgid "Update now."
+msgstr ""
+
+#: languages/strings.php:31
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: languages/strings.php:32
+msgid "Error"
+msgstr ""
+
+#: languages/strings.php:33
+msgid "License Key"
+msgstr ""
+
+#: languages/strings.php:34
+msgid "Deactivate License"
+msgstr ""
+
+#: languages/strings.php:35
+msgid "Activate License"
+msgstr ""
+
+#: languages/strings.php:38
+msgid "Google Calendar settings"
+msgstr ""
+
+#: languages/strings.php:39
+msgid "Calendars"
+msgstr ""
+
+#: languages/strings.php:40
+msgid "Google Calendar Settings"
+msgstr ""
+
+#: languages/strings.php:41
+msgid "Client ID"
+msgstr ""
+
+#: languages/strings.php:42
+msgid "Client Secret"
+msgstr ""
+
+#: languages/strings.php:43
+msgid "Calendar ID"
+msgstr ""
+
+#: languages/strings.php:44
+msgid "Redirect URI"
+msgstr ""
+
+#: languages/strings.php:45
+msgid "External Calendars"
+msgstr ""
+
+#: languages/strings.php:46
+msgid "Send your appointments to your calendar."
+msgstr ""
+
+#: languages/strings.php:47
+msgid "Google API"
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com/docs/set-up-google-calendar-sync
+#: languages/strings.php:49
+msgid "Need help finding your credentials? Visit <a href='%s' target='_blank'>our documentation</a> for more information."
+msgstr ""
+
+#: languages/strings.php:50
+msgid "Authorize Google Account"
+msgstr ""
+
+#: languages/strings.php:53
+msgid "Refunds are no longer available for this payment."
+msgstr ""
+
+#: languages/strings.php:54
+msgid "Payment Refund Fetch Error"
+msgstr ""
+
+#: languages/strings.php:55
+msgid "Payment Refund Error: "
+msgstr ""
+
+#: languages/strings.php:58
+msgid "Email Fetch Error"
+msgstr ""
+
+#: languages/strings.php:59
+msgid "There is a problem with the payment form."
+msgstr ""
+
+#: languages/strings.php:60
+msgid "There was a problem with your refund."
+msgstr ""
+
+#: languages/strings.php:61
+msgid "Choose your payment gateway or choose Pay Locally if you'll only be accepting payments in person."
+msgstr ""
+
+#: languages/strings.php:62
+msgid "Set up your payment gateways"
+msgstr ""
+
+#: languages/strings.php:63
+msgid "Sandbox Mode"
+msgstr ""
+
+#: languages/strings.php:64
+msgid "Pay Now"
+msgstr ""
+
+#: languages/strings.php:65
+msgid "Time Slot Pro license is invalid"
+msgstr ""
+
+#: languages/strings.php:66
+msgid "Unauthorized"
+msgstr ""
+
+#: languages/strings.php:69
+msgid "PayPal Fetch Error"
+msgstr ""
+
+#: languages/strings.php:70
+msgid "There was a problem with your payment."
+msgstr ""
+
+#: languages/strings.php:71
+msgid "PayPal settings are missing or incorrect: Button could not be loaded"
+msgstr ""
+
+#: languages/strings.php:72
+msgid "There is a problem with the payment button on this form."
+msgstr ""
+
+#: languages/strings.php:73
+msgid "PayPal is not set up correctly."
+msgstr ""
+
+#: languages/strings.php:74
+msgid "PayPal API Help"
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com/docs/set-up-paypal-payments
+#: languages/strings.php:76
+msgid "Need help finding your REST API credentials? Visit <a href='%s' target='_blank'>our documentation</a> for more information."
+msgstr ""
+
+#: languages/strings.php:77
+msgid "Rectangle"
+msgstr ""
+
+#: languages/strings.php:78
+msgid "Pill"
+msgstr ""
+
+#: languages/strings.php:79
+msgid "PayPal"
+msgstr ""
+
+#: languages/strings.php:80
+msgid "Button Shape"
+msgstr ""
+
+#: languages/strings.php:81
+msgid "Button Color"
+msgstr ""
+
+#: languages/strings.php:82
+msgid "Secret"
+msgstr ""
+
+#: languages/strings.php:83
+msgid "Sandbox Client ID"
+msgstr ""
+
+#: languages/strings.php:84
+msgid "Sandbox Secret"
+msgstr ""
+
+#: languages/strings.php:87
+msgid "Square Fetch Error"
+msgstr ""
+
+#: languages/strings.php:88
+msgid "Square settings are missing or incorrect: Payment form could not be loaded"
+msgstr ""
+
+#: languages/strings.php:89
+msgid "Square is not set up correctly."
+msgstr ""
+
+#: languages/strings.php:90
+msgid "There was a problem with the CVV."
+msgstr ""
+
+#: languages/strings.php:91
+msgid "There was a problem with the zip code."
+msgstr ""
+
+#: languages/strings.php:92
+msgid "The card has expired."
+msgstr ""
+
+#: languages/strings.php:93
+msgid "There was a problem with the expiration date."
+msgstr ""
+
+#: languages/strings.php:94
+msgid "There are insufficient funds to cover the payment."
+msgstr ""
+
+#: languages/strings.php:95
+msgid "An unexpected error occurred. The payment was not successful."
+msgstr ""
+
+#. translators: Placeholder is URL https://timeslotplugins.com/docs/set-up-square-payments
+#: languages/strings.php:97
+msgid "Need help finding your tokens? Visit <a href='%s' target='_blank'>our documentation</a> for more information."
+msgstr ""
+
+#: languages/strings.php:98
+msgid "Square API Help"
+msgstr ""
+
+#: languages/strings.php:99
+msgid "Square"
+msgstr ""
+
+#: languages/strings.php:100
+msgid "Location Id"
+msgstr ""
+
+#: languages/strings.php:101
+msgid "Production Application Id"
+msgstr ""
+
+#: languages/strings.php:102
+msgid "Production Access Token"
+msgstr ""
+
+#: languages/strings.php:103
+msgid "Sandbox Location Id"
+msgstr ""
+
+#: languages/strings.php:104
+msgid "Sandbox Application Id"
+msgstr ""
+
+#: languages/strings.php:105
+msgid "Sandbox Access Token"
+msgstr ""
+
+#: languages/strings.php:108
+msgid "Stripe is not set up correctly."
+msgstr ""
+
+#: languages/strings.php:109
+msgid "Stripe settings are missing or incorrect: Payment form could not be loaded"
+msgstr ""
+
+#: languages/strings.php:110
+msgid "Stripe Fetch Error"
+msgstr ""
+
+#. translators: Placeholder is URL
+#: languages/strings.php:112
+msgid "Need help finding your keys? Visit <a href='%s' target='_blank'>our documentation</a> for more information."
+msgstr ""
+
+#: languages/strings.php:113
+msgid "Stripe API Help"
+msgstr ""
+
+#: languages/strings.php:114
+msgid "Stripe"
+msgstr ""
+
+#: languages/strings.php:115
+msgid "Live Publishable Key"
+msgstr ""
+
+#: languages/strings.php:116
+msgid "Live Secret Key"
+msgstr ""
+
+#: languages/strings.php:117
+msgid "Test Publishable Key"
+msgstr ""
+
+#: languages/strings.php:118
+msgid "Test Secret Key"
+msgstr ""
+
+#: languages/strings.php:121
+msgid "There was a problem with the payment."
+msgstr ""
+
+#: languages/strings.php:122
+msgid "Mollie Refund Error: "
+msgstr ""
+
+#: languages/strings.php:123
+msgid "Mollie Payment Failed: "
+msgstr ""
+
+#: languages/strings.php:124
+msgid "Mollie is not set up correctly."
+msgstr ""
+
+#. translators: Placeholder is service name for customer name
+#: languages/strings.php:126
+msgid "%1$s for %2$s"
+msgstr ""
+
+#: languages/strings.php:127
+msgid "Mollie settings are missing or incorrect"
+msgstr ""
+
+#: languages/strings.php:128
+msgid "Mollie Fetch Error"
+msgstr ""
+
+#: languages/strings.php:129
+msgid "Name on Card"
+msgstr ""
+
+#: languages/strings.php:130
+msgid "Card Number"
+msgstr ""
+
+#: languages/strings.php:131
+msgid "CVC"
+msgstr ""
+
+#: languages/strings.php:132
+msgid "Expiration Date"
+msgstr ""
+
+#: languages/strings.php:135
+msgid "Please upload a valid CSV file"
+msgstr ""
+
+#: languages/strings.php:136
+msgid "Please upload a CSV file"
+msgstr ""
+
+#. translators: Placeholder is page title
+#: languages/strings.php:138
+msgid "Import %s"
+msgstr ""
+
+#. translators: Placeholder is page title
+#: languages/strings.php:140
+msgid "%s imported successfully"
+msgstr ""
+
+#: languages/strings.php:141
+msgid "Upload a csv file. Include the column names in the first row."
+msgstr ""
+
+#: languages/strings.php:142
+msgid "Select a csv file"
+msgstr ""
+
+#: languages/strings.php:143
+msgid "There is a problem with your Time Slot Pro license."
+msgstr ""
+
+#: languages/strings.php:146
+msgid "Appointment Reminder"
+msgstr ""
+
+#: languages/strings.php:147
+msgid "Reminder Subject"
+msgstr ""
+
+#: languages/strings.php:148
+msgid "Reminder Message"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:31
+#: public/form/shortcode.php:109
+#: admin/inc/blocks/timeslot-block.js:141
+msgid "Appointment Date"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:32
+#: public/form/shortcode.php:113
+#: admin/inc/blocks/timeslot-block.js:147
+msgid "Appointment Time"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:33
+#: admin/js/color-picker.js:20
+msgid "Cancel"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:34
+msgid "Time Slot Options"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:35
+msgid "Appointment"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:36
+msgid "Client"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:37
+msgid "Select"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:38
+msgid "Client Name"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:39
+msgid "Client Email"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:40
+msgid "Client Phone"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:41
+msgid "Company Website"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:42
+msgid "Company Email"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:43
+msgid "Company Phone"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:44
+msgid "Company Address"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:45
+msgid "Service Name"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:46
+msgid "Service Price"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:47
+msgid "Staff Name"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:48
+msgid "Staff Email"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:49
+msgid "Staff Phone"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:50
+msgid "Insert"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:51
+msgid "Send Test Email"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:52
+msgid "Email recipient"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:53
+msgid "Send"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:54
+msgid "Email Test Error"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:55
+msgid "Insert appointment info"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:56
+msgid "Send a test email"
+msgstr ""
+
+#: languages/ts-tinymce-lang.php:57
+msgid "Message Sent"
+msgstr ""
+
+#: public/form/shortcode.php:51
+msgid "Thank you for booking with us!"
+msgstr ""
+
+#: public/form/shortcode.php:52
+msgid "There was a problem submitting your appointment."
+msgstr ""
+
+#: public/form/shortcode.php:60
+msgid "Schedule an Appointment"
+msgstr ""
+
+#: public/form/shortcode.php:66
+#: admin/js/select2.js:93
+#: admin/js/tables/appointments.js:317
+#: admin/js/tables/staff.js:243
+#: public/js/ts-form.js:480
+msgid "Please select a service."
+msgstr ""
+
+#: public/form/shortcode.php:66
+#: admin/inc/blocks/timeslot-block.js:131
+msgid "Select Service"
+msgstr ""
+
+#: public/form/shortcode.php:104
+#: admin/js/tables/appointments.js:318
+#: public/js/ts-form.js:483
+msgid "Please select a staff member."
+msgstr ""
+
+#: public/form/shortcode.php:104
+#: public/js/ts-form.js:152
+#: public/js/ts-form.js:174
+msgid "Select Staff"
+msgstr ""
+
+#: public/form/shortcode.php:114
+#: public/js/ts-form.js:482
+msgid "Please select a time."
+msgstr ""
+
+#: public/form/shortcode.php:114
+#: admin/inc/blocks/timeslot-block.js:152
+#: public/js/ts-form.js:325
+#: public/js/ts-form.js:342
+msgid "Select Time"
+msgstr ""
+
+#: public/form/shortcode.php:118
+msgid "Full Name"
+msgstr ""
+
+#: public/form/shortcode.php:139
+#: admin/inc/blocks/timeslot-block.js:181
+msgid "Have a Coupon Code?"
+msgstr ""
+
+#: public/form/shortcode.php:144
+msgid "Enter Coupon Code"
+msgstr ""
+
+#: public/form/shortcode.php:149
+#: admin/inc/blocks/timeslot-block.js:188
+msgid "Continue"
+msgstr ""
+
+#: public/form/shortcode.php:158
+#: admin/js/tables/defaults.js:24
+msgid "Previous"
+msgstr ""
+
+#: public/form/shortcode.php:161
+msgid "Appointment Summary"
+msgstr ""
+
+#: public/form/shortcode.php:164
+msgid "Contact Info"
+msgstr ""
+
+#: public/form/shortcode.php:171
+msgid "Order Summary"
+msgstr ""
+
+#: public/form/shortcode.php:184
+msgid "Submit"
+msgstr ""
+
+#: public/form/staff.php:60
+msgid "There are no active Time Slot staff members"
+msgstr ""
+
+#: public/form/staff.php:87
+msgid "Any"
+msgstr ""
+
+#: public/form/submit.php:21
+msgid "Form verification failed"
+msgstr ""
+
+#: admin/inc/blocks/timeslot-block.js:34
+msgid "Select Staff Member"
+msgstr ""
+
+#: admin/inc/blocks/timeslot-block.js:95
+msgid "Form Options"
+msgstr ""
+
+#: admin/inc/blocks/timeslot-block.js:99
+msgid "Want to style your form? "
+msgstr ""
+
+#: admin/inc/blocks/timeslot-block.js:105
+msgid " Go to the Time Slot settings."
+msgstr ""
+
+#: admin/js/ajax-save.js:73
+#: admin/js/tables/customers.js:140
+#: admin/js/tables/staff.js:240
+#: public/js/ts-form.js:476
+msgid "Please enter a valid phone number."
+msgstr ""
+
+#: admin/js/ajax-save.js:74
+#: admin/js/ajax-save.js:181
+#: admin/js/tables/staff.js:235
+#: public/js/ts-form.js:472
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: admin/js/ajax-save.js:75
+msgid "Please include http:// in url."
+msgstr ""
+
+#: admin/js/ajax-save.js:92
+msgid "Please enter a valid purchase code."
+msgstr ""
+
+#: admin/js/ajax-save.js:112
+msgid "Please enter your business hours."
+msgstr ""
+
+#: admin/js/ajax-save.js:114
+msgid "Please enter your break hours."
+msgstr ""
+
+#: admin/js/ajax-save.js:157
+#: admin/js/ajax-save.js:158
+#: admin/js/ajax-save.js:159
+#: admin/js/ajax-save.js:160
+msgid "Please enter a valid time."
+msgstr ""
+
+#: admin/js/color-picker.js:21
+msgid "Save"
+msgstr ""
+
+#: admin/js/media-uploader.js:23
+msgid "Choose Your Company Logo"
+msgstr ""
+
+#: admin/js/media-uploader.js:24
+msgid "Set Company Logo"
+msgstr ""
+
+#: admin/js/select2.js:131
+msgid "Select Currency"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:30
+msgid "appointments"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:31
+msgid "customers"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:32
+msgid "payments"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:33
+msgid "coupons"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:34
+msgid "services"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:35
+#: admin/js/tables/all-tables.js:42
+msgid "staff member"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:35
+#: admin/js/tables/all-tables.js:43
+msgid "staff members"
+msgstr ""
+
+#. translators: %s is a placeholder html span tags
+#: admin/js/tables/all-tables.js:47
+msgid "%1$s This will also delete their appointments.%2$s"
+msgstr ""
+
+#. translators: %s is a placeholder for the page name
+#: admin/js/tables/all-tables.js:76
+msgid "Are you sure you want to delete this %s?"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:97
+msgid "Delete Row Error "
+msgstr ""
+
+#. translators: %s is a placeholder for the page name
+#: admin/js/tables/all-tables.js:119
+msgid "Are you sure you want to delete these %s?"
+msgstr ""
+
+#: admin/js/tables/all-tables.js:142
+msgid "Delete Rows Error "
+msgstr ""
+
+#: admin/js/tables/appointments.js:19
+#: admin/js/tables/coupons.js:18
+#: admin/js/tables/defaults.js:20
+#: admin/js/tables/payments.js:16
+#: admin/js/tables/services.js:15
+msgid "Delete Row"
+msgstr ""
+
+#: admin/js/tables/appointments.js:20
+#: admin/js/tables/coupons.js:19
+#: admin/js/tables/defaults.js:19
+#: admin/js/tables/payments.js:15
+#: admin/js/tables/services.js:14
+msgid "Edit Row"
+msgstr ""
+
+#: admin/js/tables/appointments.js:21
+#: admin/js/tables/coupons.js:21
+#: admin/js/tables/defaults.js:26
+#: admin/js/tables/payments.js:18
+#: admin/js/tables/services.js:19
+msgid "Select Row"
+msgstr ""
+
+#: admin/js/tables/appointments.js:22
+#: admin/js/tables/coupons.js:20
+#: admin/js/tables/customers.js:18
+#: admin/js/tables/payments.js:17
+#: admin/js/tables/services.js:17
+#: admin/js/tables/staff.js:14
+msgid "Showing"
+msgstr ""
+
+#: admin/js/tables/appointments.js:40
+#: admin/js/tables/coupons.js:38
+#: admin/js/tables/defaults.js:34
+#: admin/js/tables/payments.js:46
+#: admin/js/tables/services.js:38
+#: admin/js/tables/staff.js:34
+msgid "Save Table as CSV"
+msgstr ""
+
+#: admin/js/tables/appointments.js:47
+#: admin/js/tables/coupons.js:45
+#: admin/js/tables/defaults.js:40
+#: admin/js/tables/payments.js:53
+#: admin/js/tables/services.js:48
+#: admin/js/tables/staff.js:44
+msgid "Print Table"
+msgstr ""
+
+#: admin/js/tables/appointments.js:51
+#: admin/js/tables/coupons.js:49
+#: admin/js/tables/customers.js:43
+#: admin/js/tables/payments.js:57
+#: admin/js/tables/services.js:52
+#: admin/js/tables/staff.js:48
+msgid "Print"
+msgstr ""
+
+#: admin/js/tables/appointments.js:110
+msgid "No Appointments Scheduled"
+msgstr ""
+
+#: admin/js/tables/appointments.js:113
+msgid "Loading Appointments"
+msgstr ""
+
+#: admin/js/tables/appointments.js:114
+msgid "Processing Appointments"
+msgstr ""
+
+#: admin/js/tables/appointments.js:115
+msgid "Search Appointments"
+msgstr ""
+
+#: admin/js/tables/appointments.js:116
+msgid "No Matching Appointments Found"
+msgstr ""
+
+#: admin/js/tables/appointments.js:212
+#: admin/js/tables/appointments.js:213
+msgid "Appointment Fetch Error"
+msgstr ""
+
+#: admin/js/tables/appointments.js:240
+msgid "Appointment Table Error: "
+msgstr ""
+
+#: admin/js/tables/appointments.js:315
+msgid "Please select a customer."
+msgstr ""
+
+#: admin/js/tables/appointments.js:316
+#: admin/js/tables/staff.js:238
+msgid "Please enter a name."
+msgstr ""
+
+#: admin/js/tables/appointments.js:319
+#: public/js/ts-form.js:481
+msgid "Please select a date."
+msgstr ""
+
+#: admin/js/tables/appointments.js:320
+msgid "Please enter a time."
+msgstr ""
+
+#: admin/js/tables/appointments.js:321
+#: admin/js/tables/coupons.js:200
+#: admin/js/tables/payments.js:284
+msgid "Please select a status."
+msgstr ""
+
+#: admin/js/tables/coupons.js:109
+msgid "No Coupons Created"
+msgstr ""
+
+#: admin/js/tables/coupons.js:112
+msgid "Loading Coupons"
+msgstr ""
+
+#: admin/js/tables/coupons.js:113
+msgid "Processing Coupons"
+msgstr ""
+
+#: admin/js/tables/coupons.js:114
+msgid "Search Coupons"
+msgstr ""
+
+#: admin/js/tables/coupons.js:115
+msgid "No Matching Coupons Found"
+msgstr ""
+
+#: admin/js/tables/coupons.js:154
+#: admin/js/tables/coupons.js:155
+msgid "Coupon Fetch Error"
+msgstr ""
+
+#: admin/js/tables/coupons.js:167
+msgid "Coupon Error: "
+msgstr ""
+
+#: admin/js/tables/coupons.js:199
+msgid "Please enter a coupon code."
+msgstr ""
+
+#: admin/js/tables/coupons.js:202
+msgid "Please enter an amount."
+msgstr ""
+
+#: admin/js/tables/coupons.js:203
+msgid "Please enter a whole number."
+msgstr ""
+
+#: admin/js/tables/coupons.js:205
+msgid "Please select a discount type."
+msgstr ""
+
+#: admin/js/tables/customers.js:51
+msgid "No Customers Created"
+msgstr ""
+
+#: admin/js/tables/customers.js:54
+msgid "Loading Customers"
+msgstr ""
+
+#: admin/js/tables/customers.js:55
+msgid "Processing Customers"
+msgstr ""
+
+#: admin/js/tables/customers.js:56
+msgid "Search Customers"
+msgstr ""
+
+#: admin/js/tables/customers.js:57
+msgid "No Matching Customers Found"
+msgstr ""
+
+#: admin/js/tables/customers.js:95
+#: admin/js/tables/customers.js:96
+msgid "Customer Fetch Error"
+msgstr ""
+
+#: admin/js/tables/customers.js:107
+msgid "Customer Error: "
+msgstr ""
+
+#: admin/js/tables/customers.js:133
+msgid "Please enter a customer name."
+msgstr ""
+
+#: admin/js/tables/customers.js:135
+#: admin/js/tables/staff.js:236
+msgid "Please enter an email address."
+msgstr ""
+
+#: admin/js/tables/customers.js:136
+msgid "Please enter a valid email."
+msgstr ""
+
+#: admin/js/tables/customers.js:139
+#: admin/js/tables/staff.js:241
+msgid "Please enter a phone number."
+msgstr ""
+
+#: admin/js/tables/defaults.js:21
+msgid "Selected"
+msgstr ""
+
+#: admin/js/tables/defaults.js:22
+msgid "Row"
+msgstr ""
+
+#: admin/js/tables/defaults.js:23
+msgid "Rows"
+msgstr ""
+
+#: admin/js/tables/defaults.js:25
+msgid "Next"
+msgstr ""
+
+#: admin/js/tables/defaults.js:89
+msgid ": Click or return to sort ascending"
+msgstr ""
+
+#: admin/js/tables/defaults.js:90
+msgid ": Click or return to sort descending"
+msgstr ""
+
+#: admin/js/tables/payments.js:29
+msgid "Refund Payment"
+msgstr ""
+
+#: admin/js/tables/payments.js:125
+msgid "No Payments Created"
+msgstr ""
+
+#: admin/js/tables/payments.js:128
+msgid "Loading Payments"
+msgstr ""
+
+#: admin/js/tables/payments.js:129
+msgid "Processing Payments"
+msgstr ""
+
+#: admin/js/tables/payments.js:130
+msgid "Search Payments"
+msgstr ""
+
+#: admin/js/tables/payments.js:131
+msgid "No Matching Payments Found"
+msgstr ""
+
+#: admin/js/tables/payments.js:147
+msgid "This payment has already been refunded."
+msgstr ""
+
+#: admin/js/tables/payments.js:156
+#: public/js/local.js:40
+msgid "Local"
+msgstr ""
+
+#: admin/js/tables/payments.js:158
+msgid "Are you sure you want to refund this payment?"
+msgstr ""
+
+#: admin/js/tables/payments.js:190
+#: admin/js/tables/payments.js:191
+#: admin/js/tables/payments.js:248
+#: admin/js/tables/payments.js:249
+msgid "Payment Fetch Error"
+msgstr ""
+
+#: admin/js/tables/payments.js:201
+msgid "Your refund was successful."
+msgstr ""
+
+#: admin/js/tables/payments.js:209
+#: admin/js/tables/payments.js:261
+msgid "Payment Error: "
+msgstr ""
+
+#: admin/js/tables/services.js:16
+msgid "Add Categories"
+msgstr ""
+
+#: admin/js/tables/services.js:123
+msgid " Minutes"
+msgstr ""
+
+#: admin/js/tables/services.js:129
+msgid " Hour +"
+msgstr ""
+
+#: admin/js/tables/services.js:129
+msgid " Hours +"
+msgstr ""
+
+#: admin/js/tables/services.js:131
+msgid " Hour"
+msgstr ""
+
+#: admin/js/tables/services.js:131
+msgid " Hours"
+msgstr ""
+
+#: admin/js/tables/services.js:138
+msgid " Day +"
+msgstr ""
+
+#: admin/js/tables/services.js:138
+msgid " Days +"
+msgstr ""
+
+#: admin/js/tables/services.js:140
+msgid " Day"
+msgstr ""
+
+#: admin/js/tables/services.js:140
+msgid " Days"
+msgstr ""
+
+#: admin/js/tables/services.js:166
+msgid "No Services Created"
+msgstr ""
+
+#: admin/js/tables/services.js:169
+msgid "Loading Services"
+msgstr ""
+
+#: admin/js/tables/services.js:170
+msgid "Processing Services"
+msgstr ""
+
+#: admin/js/tables/services.js:171
+msgid "Search Services"
+msgstr ""
+
+#: admin/js/tables/services.js:172
+msgid "No Matching Services Found"
+msgstr ""
+
+#: admin/js/tables/services.js:285
+#: admin/js/tables/services.js:286
+msgid "Service Fetch Error"
+msgstr ""
+
+#: admin/js/tables/services.js:293
+msgid "This service name already exists."
+msgstr ""
+
+#: admin/js/tables/services.js:307
+msgid "Service Error: "
+msgstr ""
+
+#: admin/js/tables/services.js:315
+msgid "Hour"
+msgstr ""
+
+#: admin/js/tables/services.js:316
+msgid "Minute"
+msgstr ""
+
+#: admin/js/tables/services.js:318
+msgid "Minutes"
+msgstr ""
+
+#: admin/js/tables/services.js:332
+#: admin/js/tables/services.js:402
+#: admin/js/tables/services.js:406
+msgid "Please enter a duration."
+msgstr ""
+
+#: admin/js/tables/services.js:387
+#: admin/js/tables/services.js:389
+msgid "Please enter a valid price."
+msgstr ""
+
+#: admin/js/tables/services.js:388
+msgid "Please enter a price."
+msgstr ""
+
+#: admin/js/tables/services.js:392
+msgid "Please enter a service."
+msgstr ""
+
+#: admin/js/tables/services.js:395
+#: admin/js/tables/services.js:398
+#: admin/js/tables/services.js:403
+#: admin/js/tables/services.js:407
+msgid "Please enter a valid number."
+msgstr ""
+
+#: admin/js/tables/services.js:399
+#: admin/js/tables/services.js:408
+msgid "Please use 15 minute increments."
+msgstr ""
+
+#: admin/js/tables/services.js:410
+#: admin/js/tables/staff.js:244
+msgid "Please select an option."
+msgstr ""
+
+#: admin/js/tables/staff.js:16
+msgid "Staff Members"
+msgstr ""
+
+#: admin/js/tables/staff.js:56
+msgid "No Staff Created"
+msgstr ""
+
+#: admin/js/tables/staff.js:59
+msgid "Loading Staff"
+msgstr ""
+
+#: admin/js/tables/staff.js:60
+msgid "Processing Staff"
+msgstr ""
+
+#: admin/js/tables/staff.js:61
+msgid "Search Staff"
+msgstr ""
+
+#: admin/js/tables/staff.js:62
+msgid "No Matching Staff Found"
+msgstr ""
+
+#: admin/js/tables/staff.js:175
+#: admin/js/tables/staff.js:176
+msgid "Staff Fetch Error"
+msgstr ""
+
+#: admin/js/tables/staff.js:183
+msgid "This email is already in use."
+msgstr ""
+
+#: admin/js/tables/staff.js:197
+msgid "Staff Error: "
+msgstr ""
+
+#: public/js/local.js:64
+#: public/js/local.js:65
+msgid "Local Payment Fetch Error"
+msgstr ""
+
+#: public/js/local.js:93
+msgid "Local Payment Network Error: "
+msgstr ""
+
+#: public/js/ts-form.js:37
+msgid "Note:  Only one form per page is currently supported. This message is only visible to logged in users."
+msgstr ""
+
+#: public/js/ts-form.js:44
+msgid "Time Slot: Only one form per page is currently supported."
+msgstr ""
+
+#: public/js/ts-form.js:56
+msgid "AJAX Error: Searching for business hours "
+msgstr ""
+
+#: public/js/ts-form.js:138
+#: public/js/ts-form.js:294
+msgid "Searching..."
+msgstr ""
+
+#: public/js/ts-form.js:177
+msgid "AJAX Error: Searching for Staff Members "
+msgstr ""
+
+#: public/js/ts-form.js:203
+msgid "AJAX Error: Searching for Staff Days Off "
+msgstr ""
+
+#: public/js/ts-form.js:233
+msgid "AJAX Error: Searching for Available Staff "
+msgstr ""
+
+#: public/js/ts-form.js:259
+msgid "AJAX Error: Searching for booked appointments "
+msgstr ""
+
+#: public/js/ts-form.js:312
+msgid "AJAX Error: Searching for Appointment Times "
+msgstr ""
+
+#. translators: name of service with name of staff
+#: public/js/ts-form.js:363
+msgid "%1$s with %2$s"
+msgstr ""
+
+#. translators: date at time
+#: public/js/ts-form.js:365
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: public/js/ts-form.js:419
+msgid "Free"
+msgstr ""
+
+#: public/js/ts-form.js:470
+msgid "Please enter a valid coupon code."
+msgstr ""
+
+#: public/js/ts-form.js:473
+msgid "Please enter your email address."
+msgstr ""
+
+#: public/js/ts-form.js:477
+msgid "Please enter your phone number."
+msgstr ""
+
+#: public/js/ts-form.js:479
+msgid "Please enter your name."
+msgstr ""
+
+#: admin/inc/blocks/block.json
+msgctxt "block title"
+msgid "Time Slot"
+msgstr ""
+
+#: admin/inc/blocks/block.json
+msgctxt "block description"
+msgid "Add the Time Slot booking form to your page or post"
+msgstr ""
+
+#: admin/inc/blocks/block.json
+msgctxt "block keyword"
+msgid "calendar"
+msgstr ""
+
+#: admin/inc/blocks/block.json
+msgctxt "block keyword"
+msgid "schedule"
+msgstr ""
+
+#: admin/inc/blocks/block.json
+msgctxt "block keyword"
+msgid "book"
+msgstr ""

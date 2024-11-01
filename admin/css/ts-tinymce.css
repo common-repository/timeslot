@@ -1,0 +1,13 @@
+/**
+ * Styles for TinyMCE
+ *
+ * @link https://timeslotplugins.com
+ *
+ * @package Time Slot
+ * @since 1.0.0
+ *
+ */
+
+body#tinymce.wp-editor {
+	font-family: 'Roboto', sans-serif;
+}

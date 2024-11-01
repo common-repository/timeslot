@@ -1,0 +1,32 @@
+<wpml-config>
+  <admin-texts>
+    <key name="timeslot-company-tab">
+      <key name="company-address-1"/>
+      <key name="company-address-2"/>
+      <key name="company-city"/>
+      <key name="company-state"/>
+      <key name="company-zip"/>
+    </key>
+    <key name="timeslot-email-tab">
+      <key name="customer-email-approved-subject"/>
+      <key name="customer-email-approved-tinymce"/>
+      <key name="customer-email-canceled-subject"/>
+      <key name="customer-email-canceled-tinymce"/>
+      <key name="customer-email-reminder-subject"/>
+      <key name="customer-email-reminder-tinymce"/>
+      <key name="staff-email-approved-subject"/>
+      <key name="staff-email-approved-tinymce"/>
+      <key name="staff-email-canceled-subject"/>
+      <key name="staff-email-canceled-tinymce"/>
+    </key>
+    <key name="timeslot-general-tab">
+      <key name="summary-msg"/>
+      <key name="success-msg"/>
+    </key>
+    <key name="timeslot-service-categories">
+      <key name="service-category">
+        <key name="*"/>
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

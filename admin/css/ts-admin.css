@@ -1,0 +1,2451 @@
+/**
+ * Styles for admin pages
+ *
+ * @link https://timeslotplugins.com
+ *
+ * @package Time Slot
+ * @since 1.0.0
+ *
+ */
+
+/*------------------------------------------------*/
+/*  Colors                                        */
+/*------------------------------------------------*/
+
+:root {
+	--ts-blue: #016ee0;
+	--ts-offwhite: #f0f0f0;
+	--ts-gray: #d9d9d9;
+	--ts-navy: #0e1b38;
+	--ts-white: #fff;
+	--ts-red: #b20921;
+}
+
+/*------------------------------------------------*/
+/*   FOUC                                         */
+/*------------------------------------------------*/
+
+.ts-load {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*------------------------------------------------*/
+/*   Page Header                                  */
+/*------------------------------------------------*/
+
+.timeslot-header img {
+	max-width: 230px;
+}
+
+.timeslot-header .logo-link {
+	line-height: 0;
+}
+
+.timeslot-header {
+	align-items: center;
+	background-color: var(--ts-white);
+	color: var(--ts-navy);
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: space-between;
+	padding: 1em 3%;
+	width: 100%;
+}
+
+[class*="timeslot"] #wpcontent {
+	padding: 0;
+}
+
+.timeslot-header nav {
+	display: flex;
+	gap: 1em;
+	justify-content: space-between;
+}
+
+.timeslot-header .ts-nav-link {
+	background: var(--ts-gray);
+	border: 0;
+	color: var(--ts-navy);
+	display: inline-block;
+	font: 500 13px 'Roboto',sans-serif;
+	min-width: max-content;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.timeslot-header .ts-nav-link:hover,
+.timeslot-header .ts-highlight-link {
+	background-color: var(--ts-blue);
+	color: var(--ts-white);
+}
+
+.timeslot-header .ts-highlight-link:hover {
+	background-color: var(--ts-navy);
+	color: var(--ts-white);
+}
+
+.ts-notice {
+	background: var(--ts-blue);
+	color: var(--ts-white);
+	font-weight: 600;
+	margin: 0;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.ts-notice a {
+	color: var(--ts-white);
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/*------------------------------------------------*/
+/*   Nav Tabs                                     */
+/*------------------------------------------------*/
+
+.timeslot-nav {
+	display: flex;
+}
+
+.timeslot-nav a {
+	align-items: center;
+	background: var(--ts-gray);
+	color: var(--ts-navy);
+	display: flex;
+	font-size: 24px;
+	height: 40px;
+	justify-content: center;
+	margin: 0 5px;
+	padding: 5px;
+	text-decoration: none;
+	width: 40px;
+}
+
+.ts-nav.nav-tab-wrapper {
+	border-bottom: 2px solid var(--ts-navy);
+	margin: 20px 3% 0;
+}
+
+.ts-nav .li:first-child a {
+	margin-left: 0;
+}
+
+.ts-nav .nav-tab.nav-tab-active,
+.ts-nav .nav-tab.nav-tab-active:focus,
+.ts-nav .nav-tab.nav-tab-active:focus:active,
+.ts-nav .nav-tab.nav-tab-active:hover,
+.ts-nav .nav-tab:hover,
+.ts-nav .nav-tab:active {
+	background: var(--ts-blue);
+	border-bottom: none;
+	color: var(--ts-white);
+}
+
+.ts-nav li:first-child a.nav-tab {
+	margin-left: 0;
+}
+
+.ts-nav li:last-child a.nav-tab {
+	margin-right: 0;
+}
+
+.ts-nav .nav-tab {
+	background: var(--ts-gray);
+	border: none;
+	color: var(--ts-navy);
+	font: 500 13px 'Roboto', sans-serif;
+	margin-left: 1.5em;
+}
+
+.ts-nav .nav-tab:focus {
+	background: var(--ts-blue);
+	border-bottom: none;
+	box-shadow: none;
+	color: var(--ts-white);
+	outline: 2px solid var(--ts-navy);
+	outline-offset: 0;
+}
+
+/*------------------------------------------------*/
+/*   Dashboard Page                               */
+/*------------------------------------------------*/
+
+.ts-dashboard {
+	color: var(--ts-navy);
+	display: grid;
+	grid-auto-rows: minmax(285px, auto);
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(48%,max-content));
+	font-family: 'Roboto', sans-serif;
+	margin: 3% 3% 0;
+	padding: 10px 20px 40px;
+}
+
+.ts-dashboard .ts-dashboard-group {
+	background-color: var(--ts-white);
+	padding: 20px;
+}
+
+.ts-dashboard .ts-dashboard-group > a {
+	background-color: var(--ts-white);
+	border-bottom: 1px solid var(--ts-offwhite);
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.7em 0.5em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ts-dashboard .ts-dashboard-group > a strong {
+	font-weight: 500;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.ts-dashboard .ts-dashboard-group > a:hover {
+	background: var(--ts-offwhite);
+}
+
+.ts-dashboard .ts-dashboard-group > a:last-child {
+	border-bottom: none;
+}
+
+.ts-dashboard a:focus,
+.ts-settings-form p a:focus {
+	border-bottom-color: transparent;
+	box-shadow: none;
+	outline: 2px solid var(--ts-blue);
+	outline-offset: 0;
+	text-decoration: none;
+}
+
+.ts-dashboard h2 {
+	background-color: var(--ts-offwhite);
+	color: var(--ts-navy);
+	font-size: 1.3em;
+	margin: 0 0 10px;
+	padding: 10px;
+}
+
+.ts-dashboard h3 {
+	font-size: 1.1em;
+	margin: 0;
+}
+
+.ts-dashboard p {
+	margin: 0;
+	text-align: right;
+}
+
+.ts-dashboard p a,
+.ts-settings-form p a {
+	color: var(--ts-navy);
+	display: inline-block;
+	font-weight: 600;
+	padding: 0;
+	text-decoration: underline;
+	text-decoration-color: var(--ts-gray);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.ts-dashboard p a:hover,
+.ts-settings-form p a:hover {
+	background: transparent;
+	text-decoration-color: var(--ts-blue);
+}
+
+.ts-dashboard .dashicons.dashicons-arrow-right-alt2 {
+	color: var(--ts-blue);
+	margin-left: 10px;
+}
+
+.ts-display-flex {
+	display: flex;
+}
+
+.ts-dashboard-group.ts-dash-group-setup p {
+	padding: 0.7em 0.5em;
+	text-align: left;
+}
+
+/*------------------------------------------------*/
+/*   Settings API                                 */
+/*------------------------------------------------*/
+
+.ts-settings-form {
+	background: var(--ts-white);
+	color: var(--ts-navy);
+	font-family: 'Roboto', sans-serif;
+	margin: 0 3%;
+	padding: 20px;
+}
+
+/*--- Settings API Headers ---*/
+
+.ts-settings-form h1 {
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.ts-settings-form h1,
+.ts-subtitle {
+	padding: 0 5px;
+}
+
+.ts-settings-form h2 {
+	background-color: var(--ts-offwhite);
+	font-size: 18px;
+	font-weight: 600;
+	margin: 30px 0 0;
+	padding: 10px;
+}
+
+.ts-settings-form h1,
+.ts-settings-form h2,
+.ts-settings-form h3,
+.ts-settings-form h4,
+.ts-settings-form h5,
+.ts-settings-form h6 {
+	color: var(--ts-navy);
+}
+
+.ts-settings-form .form-table th {
+	color: var(--ts-navy);
+	padding: 20px 10px;
+}
+
+.ts-settings-form label {
+	font: 500 14px 'Roboto', sans-serif;
+}
+
+/*--- Settings API Inputs ---*/
+
+.ts-settings-form input[type=text],
+.ts-settings-form input[type=number],
+.ts-settings-form input[type=email],
+.ts-settings-form input[type=password],
+.ts-settings-form input[type=url],
+.ts-settings-form input[type=tel] {
+	border: 1px solid var(--ts-gray);
+	border-radius: 0;
+	max-height: 33px;
+	min-height: 33px;
+}
+
+.ts-settings-form textarea {
+	border: 1px solid var(--ts-gray);
+	border-radius: 0;
+}
+
+.ts-settings-form input[type=text]:focus,
+.ts-settings-form input[type=number]:focus,
+.ts-settings-form input[type=email]:focus,
+.ts-settings-form input[type=password]:focus,
+.ts-settings-form input[type=url]:focus,
+.ts-settings-form input[type=tel]:focus,
+.ts-settings-form textarea:focus {
+	border-color: var(--ts-blue);
+	box-shadow: none;
+	outline: 2px solid var(--ts-blue);
+	outline-offset: -2px;
+}
+
+.ts-settings-form input[type=text].ts-color-input:focus {
+	border-color: var(--ts-gray);
+	outline: 2px solid var(--ts-gray);
+}
+
+.ts-settings-form input[type=email],
+.ts-settings-form input[type=password],
+.ts-settings-form input[type=tel] {
+	width: 100%;
+}
+
+.ts-settings-form input[type=file] {
+	margin-bottom: 15px;
+}
+
+.ts-settings-form input[type=file]::file-selector-button {
+	background-color: var(--ts-gray);
+	border: none;
+	border-radius: 0;
+	color: var(--ts-navy);
+	cursor: pointer;
+	font-weight: 600;
+	padding: 5px 10px;
+}
+
+.ts-settings-form input[type=file]::file-selector-button:hover {
+	background-color: var(--ts-blue);
+	color: var(--ts-white);
+}
+
+.ts-full-width {
+	width: 100%;
+}
+
+.ts-settings-group label {
+	display: block;
+	font-weight: 500;
+	padding: 6px 0;
+}
+
+.ts-settings-form .ts-number,
+.ts-settings-form input[type=number] {
+	box-shadow: none;
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.ts-settings-group select:required:invalid {
+	color: gray;
+}
+
+.ts-settings-group option[value=""][disabled] {
+	display: none;
+}
+
+.ts-settings-group option {
+	color: #000;
+}
+
+/*------------------------------------------------*/
+/*   Select2                                      */
+/*------------------------------------------------*/
+
+.ts-settings-row select.ts-full-width-select + .select2 {
+	min-width: 100%;
+}
+
+.ts-modal .select2-container,
+.ts-settings-form .select2-container {
+	display: block;
+}
+
+.ts-modal .select2-container.select2-container--default .select2-selection--multiple .select2-search.select2-search--inline,
+.ts-settings-form .select2-container--default .select2-selection--multiple .select2-search.select2-search--inline {
+	display: none;
+}
+
+.ts-modal .select2-selection__rendered,
+.ts-settings-form .select2-selection__rendered {
+	font-size: 14px;
+	line-height: 31px!important;
+}
+
+.ts-modal .select2-container *:focus,
+.ts-settings-form .select2-container *:focus,
+.ts-modal .select2-container *:focus-visible,
+.ts-settings-form .select2-container *:focus-visible,
+.select2-container--default.select2-container--focus .select2-selection--multiple.ts-select2-container {
+	outline: 2px solid var(--ts-blue);
+	outline-offset: -2px;
+}
+
+.ts-modal .select2-container .select2-selection--single,
+.ts-settings-form .select2-container .select2-selection--single {
+	border-color: var(--ts-gray);
+	border-radius: 0;
+	height: 33px!important;
+}
+
+.ts-modal .select2-selection__arrow,
+.ts-settings-form .select2-selection__arrow {
+	height: 32px!important;
+}
+
+.select2-container--default .ts-select2 .select2-results__option--highlighted[aria-selected],
+.select2-results .ts-select2 .select2-highlighted {
+	background-color: var(--ts-blue)!important;
+	color:var(--ts-white)!important;
+}
+
+.select2-container--default .ts-select2 .select2-results__option--selected {
+	background-color:#ddd!important;
+	color:var(--ts-navy)!important;
+}
+
+.select2-dropdown.ts-select2 {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------------------------*/
+/*   Copy Text to Clipboard                       */
+/*------------------------------------------------*/
+
+.ts-copytext {
+	cursor: pointer;
+}
+
+.ts-copytext + span {
+	-moz-animation: fade-copytext 1.5s linear;
+	-webkit-animation: fade-copytext 1.5s linear;
+	animation: fade-copytext 1.5s linear;
+	background-color: #ddd;
+	border-radius: 3px;
+	margin-left: 5px;
+	padding: 3px 5px;
+	opacity:0;
+}
+
+@-webkit-keyframes fade-copytext {
+	0% {opacity:1;}
+	85% {opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes fade-copytext {
+	0% {opacity:1;}
+	85% {opacity:1;}
+	100% {opacity:0;}
+}
+
+/*------------------------------------------------*/
+/*   Import Export Page                           */
+/*------------------------------------------------*/
+
+.ts-export-form h1 {
+	margin-bottom: 30px;
+}
+
+.ts-settings-form.ts-import-form h2 {
+	margin-top: 0;
+}
+
+.ts-settings-form.ts-import-form,
+.ts-settings-form.ts-export-form {
+	padding: 30px 30px 10px;
+}
+
+.ts-settings-form.ts-import-form {
+	padding-bottom: 40px;
+}
+
+/*------------------------------------------------*/
+/*   Repeater Fields                              */
+/*------------------------------------------------*/
+
+.ts-settings-group .ts-repeating {
+	align-items: center;
+	background-color: #f5f5f5;
+	display: flex;
+	margin-bottom: 10px;
+	max-width: 460px;
+	padding: 4px;
+}
+
+.ts-settings-group .ts-repeating label,
+.ts-settings-group .ts-inline {
+	display: inline;
+}
+
+.ts-settings-group .ts-remove,
+.ts-settings-group .ts-repeat,
+.wp-core-ui .ts-settings-row button {
+	background-color: var(--ts-navy);
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: var(--ts-white);
+	cursor: pointer;
+	font-weight: 600;
+	height: auto;
+	padding: 5px;
+	transition: background-color 0.1s ease;
+}
+
+.ts-settings-group .ts-remove,
+.wp-core-ui .ts-settings-row button:hover {
+	background-color: var(--ts-gray);
+	color: var(--ts-navy);
+}
+
+.ts-settings-group .ts-repeat {
+	align-items: center;
+	background-color: var(--ts-blue);
+	color: var(--ts-white);
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+}
+
+.ts-settings-group .ts-remove:hover,
+.ts-settings-group .ts-repeat:hover {
+	background-color: var(--ts-navy);
+	color: var(--ts-white);
+}
+
+button.ts-remove:focus-visible {
+	outline: 2px solid var(--ts-blue);
+}
+
+button.ts-repeat:focus-visible {
+	outline: 2px solid var(--ts-navy);
+}
+
+.ts-settings-group .ts-remove {
+	margin-left: auto;
+	padding: 0;
+}
+
+.ts-settings-group .ts-remove .dashicons-no-alt:before {
+	align-items: center;
+	display: flex;
+	height: 20px;
+	justify-content: center;
+	width: 21px;
+}
+
+.ts-settings-group .dashicons,
+.ts-settings-group .dashicons-before:before,
+.ts-settings-row .dashicons,
+.ts-settings-row .dashicons-before:before {
+	line-height: inherit;
+	transition: color .1s ease;
+}
+
+/*------------------------------------------------*/
+/*   Media Uploader                               */
+/*------------------------------------------------*/
+
+.ts-company-logo-thumb {
+	cursor:pointer;
+}
+
+.wp-core-ui .ts-settings-row .ts-btn.ts-remove-img-btn {
+	padding: 4px 7px;
+}
+
+.wp-core-ui .ts-settings-row .ts-btn.ts-remove-img-btn .dashicons {
+	align-items: center;
+	display: flex;
+	height: 25px;
+	justify-content: center;
+}
+
+.wp-core-ui .ts-settings-row .ts-btn.ts-upload-img-btn {
+	padding: 6px 10px;
+}
+
+.ts-settings-group [name='remove-1'] {
+	display: none;
+}
+
+.wp-core-ui .ts-settings-row .ts-btn.ts-upload-img-btn.no-img-saved {
+	width: 115px;
+}
+
+.wp-core-ui .ts-settings-row .ts-media-btn-wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	max-width: 115px;
+}
+
+#ts-media-confirm .ts-btn {
+	padding: .375rem .75rem;
+}
+
+/*------------------------------------------------*/
+/*   Business Hours Page                          */
+/*------------------------------------------------*/
+
+li.ui-timepicker-am,
+li.ui-timepicker-pm {
+	display: none;
+}
+
+.ts-hours-wrapper .ts-timepicker::placeholder {
+	color: #bbb;
+	opacity: 1;
+}
+
+#ts-business-hours-form p {
+	padding: 0 5px;
+}
+
+#ts-business-hours-form .ts-settings-group {
+	padding: 10px 5px 20px;
+}
+
+/*--- Business Hours Checkboxes ---*/
+
+.ts-checkbox-label {
+	cursor: pointer;
+	display: block;
+	padding-left: 40px!important;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.ts-checkbox-label input[type="checkbox"] {
+	cursor: pointer;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	width: 0;
+}
+
+.ts-checkmark {
+	background-color: var(--ts-white);
+	border: 1px solid var(--ts-gray);
+	border-radius: 0;
+	height: 25px;
+	left: 10px;
+	position: absolute;
+	top: 2px;
+	width: 25px;
+}
+
+.ts-checkbox-label input:checked ~ .ts-checkmark {
+	background-color: var(--ts-blue);
+}
+
+.ts-checkmark:after {
+	content: "";
+	display: none;
+	position: absolute;
+}
+
+.ts-checkbox-label input:checked ~ .ts-checkmark:after {
+	display: block;
+}
+
+.ts-checkbox-label .ts-checkmark:after {
+	border: solid var(--ts-white);
+	border-width: 0 3px 3px 0;
+	height: 14px;
+	left: 8px;
+	top: 3px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 7px;
+}
+
+.ts-checkbox-label input:not(:checked):focus + .ts-checkmark {
+	border-color: var(--ts-blue);
+	outline: 1px solid var(--ts-blue);
+}
+
+.ts-checkbox-label input:checked:focus + .ts-checkmark {
+	border-color: var(--ts-navy);
+	outline: 1px solid var(--ts-navy);
+}
+
+/*--- Break Times---*/
+.ts-break-wrapper {
+	display: none;
+}
+
+.ts-checkbox-label.ts-disabled span {
+	cursor: default;
+	opacity: 0.7;
+}
+
+/*---------------------------------------------*/
+/*   TinyMCE                                   */
+/*---------------------------------------------*/
+
+.ts-settings-row .mce-widget.mce-btn button {
+	background-color: transparent;
+}
+
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-timeslot-btn,
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-timeslot-btn button {
+	background-color: transparent;
+	border: none;
+	border-radius: 2px;
+}
+
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-timeslot-btn:hover,
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-timeslot-btn button:hover {
+	background: #dedede;
+}
+
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-btn.mce-active,
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-btn:active,
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-btn:not(.mce-listbox):focus,
+.ts-settings-row .mce-toolbar .mce-btn-group .mce-btn:not(.mce-listbox):hover {
+	background: #dedede;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.ts-settings-row .mce-toolbar .mce-last.mce-btn-group {
+	float: right;
+}
+
+.ts-settings-row .mce-toolbar .mce-btn-group {
+	border-left: none;
+}
+
+.ts-settings-row .mce-top-part::before {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.ts-settings-row .mce-toolbar .mce-listbox button {
+	color: #50575e;
+}
+
+.wp-core-ui .ts-settings-row .html-active .switch-html,
+.wp-core-ui .ts-settings-row .tmce-active .switch-tmce {
+	background: #f5f5f5;
+	border: solid #dcdcde;
+	border-width: 1px 1px 0 1px;
+	color: #50575e;
+}
+
+.wp-core-ui .ts-settings-row .wp-switch-editor {
+	background: #dedede;
+	color: #50575e;
+	font-weight: 500;
+}
+
+.wp-core-ui .ts-settings-row .wp-switch-editor:hover {
+	background-color: #cbcbcb;
+	color: #50575e;
+}
+
+.ts-settings-row .mce-statusbar.mce-last {
+	background: #f6f7f7;
+}
+
+.ts-settings-row .wp-editor-container {
+	box-shadow: none;
+}
+
+/*--- TinyMCE Dialog ---*/
+
+.mce-window.mce-floatpanel .mce-window-head {
+	background-color: var(--ts-navy);
+	border-bottom: none;
+}
+
+.mce-window.mce-floatpanel .mce-window-head .mce-title,
+.mce-window-head.mce-floatpanel .mce-close .mce-i-remove:before,
+.mce-window-head .mce-close i.mce-i-remove:before {
+	color: var(--ts-white);
+}
+
+.mce-window-head.mce-floatpanel .mce-close:hover .mce-i-remove:before,
+.mce-window-head .mce-close:hover i.mce-i-remove:before {
+	color: var(--ts-blue);
+}
+
+.mce-window.mce-floatpanel .mce-btn {
+	background-color: transparent;
+	border: 1px solid var(--ts-gray);
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.mce-window.mce-floatpanel .mce-tab,
+.mce-window.mce-floatpanel .mce-label,
+.mce-window.mce-floatpanel .mce-btn .mce-txt {
+	color: var(--ts-navy);
+	text-shadow: none;
+}
+
+.mce-window.mce-floatpanel .mce-tab {
+	font-weight: 600;
+}
+
+.mce-window.mce-floatpanel .mce-tab:hover {
+	background-color: var(--ts-gray);
+}
+
+.mce-window.mce-floatpanel .mce-tab:focus {
+	box-shadow: none;
+	outline: 1px solid var(--ts-blue);
+	outline-offset: -1px;
+}
+
+.mce-window.mce-floatpanel .mce-tab.mce-active {
+	background-color: var(--ts-gray);
+}
+
+.mce-window.mce-floatpanel .mce-label {
+	font-weight: 600;
+}
+
+.mce-window.mce-floatpanel .mce-foot .mce-btn,
+.mce-window.mce-floatpanel .mce-foot .mce-btn button .mce-txt {
+	background-color: var(--ts-gray);
+	border: none;
+	color: var(--ts-navy);
+	font-weight: 600;
+}
+
+.mce-window.mce-floatpanel .mce-foot .mce-btn:hover,
+.mce-window.mce-floatpanel .mce-foot .mce-btn:hover button .mce-txt {
+	background-color: var(--ts-navy);
+	color: var(--ts-white);
+}
+
+.mce-window.mce-floatpanel .mce-btn:hover,
+.mce-window.mce-floatpanel .mce-btn:focus {
+	background-color: transparent;
+	border-color: var(--ts-blue);
+	box-shadow: none;
+}
+
+.mce-container.mce-panel .mce-btn i.mce-caret {
+	border-top-color: var(--ts-navy);
+}
+
+.mce-floatpanel.mce-menu .mce-menu-item.mce-active.mce-menu-item-normal,
+.mce-floatpanel.mce-menu .mce-menu-item.mce-active.mce-menu-item-preview,
+.mce-floatpanel.mce-menu .mce-menu-item.mce-selected,
+.mce-floatpanel.mce-menu .mce-menu-item:focus,
+.mce-floatpanel.mce-menu .mce-menu-item:hover {
+	background: var(--ts-blue);
+	color: var(--ts-white);
+}
+
+.mce-container .mce-textbox {
+	border-color: var(--ts-gray);
+	border-radius: 0;
+	color: var(--ts-navy);
+}
+
+.mce-container .mce-textbox:focus {
+	border-color: var(--ts-blue);
+	box-shadow: none;
+	outline: 1px solid var(--ts-blue);
+}
+
+/* TinyMCE structure */
+.mce-container-body {
+	height: auto!important;
+	max-width: 100% !important;
+	width: 100%!important;
+}
+
+.mce-floatpanel.mce-window {
+	max-width: 100%;
+}
+
+.mce-window-body .mce-abs-layout-item {
+	height: auto !important;
+	position: static!important;
+	width: auto!important;
+}
+
+/* TinyMCE forms */
+.mce-abs-layout-item.mce-label {
+	display: block!important;
+	margin-bottom: 5px;
+}
+
+.mce-window-body .mce-abs-layout-item.mce-formitem {
+	padding: 5%;
+}
+
+/* TinyMCE text input */
+.mce-abs-layout-item.mce-textbox {
+	display: block!important;
+	min-height: auto;
+	width: 95%!important;
+}
+
+/* TinyMCE select input */
+.mce-window.mce-floatpanel .mce-btn.mce-listbox {
+	width: 100% !important;
+}
+
+/* TinyMCE header */
+.mce-window.mce-floatpanel .mce-window-head {
+	align-items: center;
+	display: flex;
+}
+
+.mce-window .mce-window-head .mce-title {
+	line-height: 1.2!important;
+	white-space: normal;
+}
+
+/* TinyMCE footer */
+.mce-window .mce-foot {
+	max-width: 100%;
+}
+
+.mce-window .mce-foot .mce-container-body {
+	display: flex;
+	justify-content: end;
+}
+
+.mce-window.mce-floatpanel .mce-foot .mce-btn:nth-of-type(3) {
+	margin: 0 10px;
+}
+
+.mce-window.mce-floatpanel .mce-foot .mce-btn {
+	left: auto !important;
+	position: relative;
+}
+
+/*------------------------------------------------*/
+/*   Save Success Popup                           */
+/*------------------------------------------------*/
+
+.ts-success-msg {
+	align-items: center;
+	background: var(--ts-navy);
+	bottom: -65px;
+	color: var(--ts-white);
+	display: flex;
+	font-size: 16px;
+	font-weight: 600;
+	height: 65px;
+	justify-content: center;
+	margin: 0;
+	position: fixed;
+	text-align: center;
+	width: calc(100% - 160px);
+	z-index: 9999;
+}
+
+.timeslot-saving .ts-success-msg {
+	animation-delay: 0s;
+	animation-duration: 4s;
+	animation-name: success-slide;
+	animation-timing-function: ease;
+	display: flex;
+}
+
+@keyframes success-slide {
+	0% {bottom:-65px}
+	30% {bottom:0;}
+	60% {bottom:0;}
+	100% {bottom:-65px;}
+}
+
+#ts-success-msg--service-category {
+	background: var(--ts-gray);
+	color: var(--ts-navy);
+	display: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px;
+	width: 100%;
+}
+
+/*------------------------------------------------*/
+/*   Toggle Switch                                */
+/*------------------------------------------------*/
+
+.ts-settings-row .ts-switch {
+	display: inline-block;
+	height: 24px;
+	position: relative;
+	width: 40px;
+}
+
+.ts-settings-row .ts-switch input {
+	height: 0;
+	opacity: 0;
+	width: 0;
+}
+
+.ts-settings-row .ts-slider {
+	background-color: #ccc;
+	border-radius: 12px;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.ts-settings-row .ts-slider:before {
+	background-color: var(--ts-white);
+	border-radius: 50%;
+	bottom: 4px;
+	content: "";
+	height: 16px;
+	left: 4px;
+	position: absolute;
+	-webkit-transition: .4s;
+	transition: .4s;
+	width: 16px;
+}
+
+.ts-settings-row .ts-switch input[disabled],
+.ts-settings-row .ts-switch input[disabled] + .ts-slider {
+	cursor: default;
+}
+
+.ts-settings-row .ts-switch input[type=checkbox] + .ts-slider {
+	transition: none;
+}
+
+.ts-settings-row input:checked + .ts-slider {
+	background-color: var(--ts-blue);
+}
+
+.ts-settings-row input:checked:focus + .ts-slider {
+	outline: 2px solid var(--ts-navy);
+}
+
+.ts-settings-row input:not(:checked):focus + .ts-slider {
+	outline: 2px solid var(--ts-blue);
+}
+
+.ts-settings-row input:checked + .ts-slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+.ts-hide-sandbox {
+	display: none;
+}
+
+/*------------------------------------------------*/
+/*   Form Errors                                  */
+/*------------------------------------------------*/
+
+input.ts-error {
+	border-color: var(--ts-red);
+}
+
+.ts-settings-row label.ts-error,
+.ts-settings-group label.ts-error,
+.ts-modal div.ts-appt-error {
+	align-items: center;
+	color: var(--ts-red);
+	display: flex;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 5px 0 0;
+}
+
+.ts-settings-row label.ts-error:before,
+.ts-settings-group label.ts-error:before,
+.ts-modal div.ts-appt-error:before {
+	background-color: var(--ts-red);
+	color: var(--ts-white);
+	content: "\f158";
+	font:  13px 'dashicons';
+	height: 13px;
+	line-height: 1;
+	margin-right: 5px;
+	width: 13px;
+}
+
+/*---------------------------------------------*/
+/*   Datatables                                */
+/*---------------------------------------------*/
+
+.ts-datatable-wrapper .ts-datatable > tbody > tr.selected > *,
+.ts-datatable-wrapper .ts-datatable > tbody > tr.selected > *,
+.ts-datatable-wrapper .ts-datatable.display > tbody > tr.odd.selected > *,
+.ts-datatable-wrapper .ts-datatable.display > tbody > tr.odd.selected > *,
+.ts-datatable-wrapper .ts-datatable tbody>tr.selected,
+.ts-datatable-wrapper .ts-datatable tbody>tr>.selected,
+.ts-datatable-wrapper table.ts-datatable.hover > tbody > tr.selected:hover > *,
+.ts-datatable-wrapper table.ts-datatable.display > tbody > tr.selected:hover > * {
+	background-color: #e9e9e9;
+	box-shadow: none;
+	color: var(--ts-navy);
+}
+
+.ts-datatable-wrapper .ts-datatable thead th {
+	border-bottom: 2px solid var(--ts-gray);
+	padding: 10px;
+}
+
+table.ts-datatable thead tr th:focus-visible {
+	background: var(--ts-offwhite);
+	outline: 2px solid var(--ts-gray);
+	outline-offset: -2px;
+}
+
+.ts-hidden-id {
+	display: none;
+}
+
+#ts-modal-edit--staff .ts-form-row #ts-days-off,
+#ts-modal-edit--staff .ts-form-row #ts-services {
+	width:100%;
+}
+
+.ts-appt-error {
+	display: none;
+}
+
+.ts-datatable caption {
+	visibility: hidden;
+}
+
+/*--- Datatables Checkbox ---*/
+
+.ts-datatable-wrapper input[type=checkbox] {
+	box-shadow: none;
+}
+
+.ts-datatable-wrapper input[type=checkbox]:checked::before {
+	border: solid var(--ts-navy);
+	border-width: 0 2px 2px 0;
+	content: '';
+	height: 13px;
+	left: 4px;
+	margin: 0;
+	position: relative;
+	top: -1px;
+	transform: rotate(45deg);
+	width: 6px;
+}
+
+.ts-datatable input[type=checkbox]:focus {
+	border-color: var(--ts-blue);
+	box-shadow: 0 0 0 1px var(--ts-blue);
+}
+
+.ts-datatable .ts-select-all,
+.ts-datatable .select-checkbox {
+	border-color: #999;
+	border-radius: 0;
+}
+
+.ts-datatable tbody td.select-checkboxes {
+	padding: 10px 18px;
+}
+
+.ts-datatable-wrapper .ts-datatable .select-checkboxes {
+	text-align: center;
+}
+
+/*--- Datatables Search ---*/
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input:focus,
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input:focus-visible {
+	border-color: var(--ts-navy);
+	box-shadow: inset 0 0 0 1px var(--ts-navy);
+	outline: none;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter i.dashicons.dashicons-search {
+	margin-right: 0.2em;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter label {
+	align-items: center;
+	display: flex;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input::placeholder {
+	color: #999;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter {
+	background: var(--ts-gray);
+	color: var(--ts-navy);
+	padding-left: 0.5em;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input {
+	background-color: var(--ts-white);
+	border-color: #999;
+	border-radius: 0;
+	font-size: 13px;
+	margin-right: 0;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input[type="search"]::-webkit-search-cancel-button {
+	background-image: url(../images/xmark-icon.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 15px;
+	width: 15px;
+	appearance: none;
+	-webkit-user-modify: read-write!important;
+}
+
+/*--- Tables ---*/
+
+.ts-datatable-wrapper {
+	font-family: 'Roboto', sans-serif;
+	padding: 0 3% 2%;
+	text-align: left;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper {
+	background: var(--ts-white);
+	padding: 30px 20px 20px;
+}
+
+.ts-datatable-wrapper .ts-datatable {
+	border-bottom: 2px solid var(--ts-gray);
+	border-collapse: collapse;
+	color: var(--ts-navy);
+	margin-bottom: 20px!important;
+	padding-bottom: 4px;
+	width: 100%!important;
+}
+
+.ts-datatable .no-select {
+	text-align: center;
+}
+
+.ts-datatable .child .no-select {
+	text-align: left;
+}
+
+.ts-btn.ts-add {
+	margin: 0 auto;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled {
+	display: none;
+}
+
+.ts-datatable-wrapper .ts-datatable.hover tbody tr:hover,
+.ts-datatable-wrapper .ts-datatable.display tbody tr:hover,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.odd.selected,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.even.selected,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr:hover.odd>.sorting_1,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr:hover.even>.sorting_1,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.odd.selected>.sorting_1,
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.even.selected>.sorting_1 {
+	background-color: #ededed;
+}
+
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.even>.sorting_1,
+.ts-datatable-wrapper .ts-datatable.order-column.stripe tbody tr.even>.sorting_1 {
+	background-color: var(--ts-white);
+}
+
+.ts-datatable-wrapper .ts-datatable.display tbody>tr.odd>.sorting_1,
+.ts-datatable-wrapper .ts-datatable.order-column.stripe tbody tr.odd>.sorting_1 {
+	background-color: #f9f9f9;
+}
+
+.ts-datatable tbody tr td {
+	border-bottom: 2px solid var(--ts-offwhite);
+}
+
+.ts-datatable tbody tr.selected td {
+	border-bottom-color: var(--ts-gray);
+}
+
+.ts-datatable-wrapper .ts-datatable tfoot td {
+	border-top: none;
+	padding: 10px 0;
+}
+
+.ts-datatable-wrapper .dataTables_info {
+	color: var(--ts-navy);
+}
+
+/*--- Datatables Responsive ---*/
+
+.ts-datatable-wrapper .ts-datatable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+.ts-datatable-wrapper .ts-datatable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+	align-items: center;
+	background-color: var(--ts-navy);
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: var(--ts-white);
+	content: '\f132';
+	display: flex;
+	font: 12px 'dashicons';
+	height: auto;
+	justify-content: center;
+	line-height: 1;
+	padding: 3px 3px 2px 2px;
+	width: auto;
+}
+
+.ts-datatable-wrapper .ts-datatable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before,
+.ts-datatable-wrapper .ts-datatable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
+	background-color: var(--ts-gray);
+	color: var(--ts-navy);
+	content: '\f158';
+	font-size: 16px;
+}
+
+.ts-datatable-wrapper .ts-datatable>tbody>tr.child ul.dtr-details,
+.ts-datatable-wrapper .ts-datatable>tbody>tr.child>tr {
+	width: 100%;
+}
+
+.ts-datatable-wrapper .ts-datatable .child ul.dtr-details li span {
+	display: inline-block;
+	min-width: 100px;
+}
+
+#ts-datatable--coupons .dtr-title {
+	min-width: 120px;
+}
+
+.ts-datatable-wrapper .ts-datatable .child ul.dtr-details li span.dtr-data {
+	max-width: 60%;
+	white-space: normal;
+}
+
+/*--- Datatables Buttons ---*/
+
+.ts-datatable .ts-add .dashicons-plus {
+	height: 18px;
+}
+
+.ts-datatable .ts-add {
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+}
+
+.ts-datatable-wrapper tbody button {
+	border: none!important;
+	cursor: pointer;
+	margin: 0 5px;
+	padding: 5px;
+}
+
+.ts-datatable-wrapper button:disabled {
+	cursor: auto;
+}
+
+.ts-datatable tbody .ts-table-buttons {
+	width: 100px;
+}
+
+.ts-datatable tbody .ts-table-buttons button {
+	background: var(--ts-gray);
+	color: var(--ts-navy);
+}
+
+.ts-datatable tbody .ts-table-buttons button:hover {
+	background: #72a2f8;
+}
+
+.ts-datatable tbody .ts-table-buttons button:focus,
+.ts-datatable tbody .ts-table-buttons button:focus-visible {
+	outline: 2px solid var(--ts-blue);
+}
+
+.ts-datatable tbody .ts-table-buttons button:focus:hover,
+.ts-datatable tbody .ts-table-buttons button:focus-visible:hover {
+	outline-color: #72a2f8;
+}
+
+.ts-datatable-wrapper .dt-buttons {
+	display: flex;
+}
+
+.ts-btn,
+.ts-settings-form .ts-btn,
+.ts-btn.dt-button,
+.ts-btn.button,
+.ts-btn:active:not(:disabled),
+.ts-btn.dt-button:active:not(:disabled),
+.ts-btn:focus:not(:disabled),
+.ts-btn:focus-visible:not(:disabled),
+.ts-btn.dt-button:focus-visible:not(:disabled),
+.ts-btn.dt-button:focus:not(:disabled) {
+	align-items: center;
+	background-color: var(--ts-navy);
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: var(--ts-white);
+	display: flex;
+	font-size: 16px;
+	font-weight: 500;
+	justify-content: center;
+	line-height: normal;
+	min-height: 1px;
+	padding: .375rem .75rem;
+	text-align: center;
+	text-shadow: none;
+	transition: all 0.2s ease;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.ts-btn:not(:disabled):hover,
+.ts-datatable-wrapper .ts-btn.dt-button:not(:disabled):hover,
+.ts-btn.button:not(:disabled):hover,
+.ts-datatable-wrapper .ts-btn.dt-button:active:not(.disabled):hover:not(.disabled) {
+	background-color: var(--ts-gray);
+	background-image: none;
+	border: none;
+	box-shadow: none;
+	color: var(--ts-navy);
+}
+
+.ts-btn:focus:not(:disabled),
+.ts-btn:focus-visible:not(:disabled),
+.ts-btn.dt-button:focus-visible:not(:disabled),
+.ts-btn.dt-button:focus:not(:disabled) {
+	outline: 2px solid var(--ts-blue);
+}
+
+.ts-btn i,
+.ts-btn:not(:disabled):focus:hover i,
+.ts-datatable-wrapper .ts-btn.dt-button i,
+.ts-datatable-wrapper .ts-btn.dt-button:not(:disabled):focus:hover i {
+	color: var(--ts-blue);
+}
+
+.ts-btn:not(:disabled):hover i,
+.ts-datatable-wrapper .ts-btn.dt-button:not(:disabled):hover i {
+	color: var(--ts-navy);
+}
+
+.ts-btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.ts-btn:disabled {
+	opacity: 0.7;
+}
+
+.ts-datatable tfoot .ts-btn.ts-delete-multi {
+	margin: 0 auto;
+}
+
+.ts-datatable .no-select.table-buttons {
+	padding: 10px 5px;
+}
+
+.wp-core-ui .ts-settings-row button {
+	background-color: var(--ts-navy);
+	color: var(--ts-white);
+}
+
+/*--- Datatables Pagination ---*/
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	background: var(--ts-navy);
+	border: none;
+	color: var(--ts-white)!important;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button {
+	border: none;
+	border-radius: 0;
+	color: var(--ts-navy)!important;
+	font-weight: 600;
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate a.paginate_button:focus,
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate a.paginate_button:focus-visible {
+	outline: 2px solid var(--ts-blue);
+}
+
+.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button i {
+	display: none;
+}
+
+/*--- Datatables Sorting ---*/
+
+table.ts-datatable thead tr th,
+table.ts-datatable thead tr .sorting,
+table.ts-datatable thead tr .sorting_desc,
+table.ts-datatable thead tr .sorting_asc,
+table.ts-datatable thead tr .sorting_disabled {
+	background-image: none;
+	color: var(--ts-navy);
+}
+
+.ts-datatable-wrapper table.ts-datatable thead > tr > th.sorting_asc:before,
+.ts-datatable-wrapper table.ts-datatable thead > tr > th.sorting_desc:after {
+	color: var(--ts-blue);
+	opacity: 1;
+}
+
+/*------------------------------------------------*/
+/*   Forms                                        */
+/*------------------------------------------------*/
+
+/*--- Form Layout ---*/
+
+.ts-form-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.ts-form-col {
+	margin-bottom: 1rem;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	width: 100%;
+}
+
+.ts-width-0 {
+	display: none;
+}
+
+.ts-width-50 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.ts-width-100 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+/*--- Form Inputs ---*/
+
+.ts-input,
+.ts-modal .ts-input {
+	background-clip: padding-box;
+	background-color: var(--ts-white);
+	border: 1px solid var(--ts-gray);
+	border-radius: 0;
+	color: var(--ts-navy);
+	display: block;
+	font-size: 14px;
+	line-height: 1.5;
+	max-height: 33px;
+	min-height: 33px;
+	padding: 5px 10px;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	width: 100%;
+}
+
+.ts-input:disabled,
+.ts-input[readonly] {
+	background-color: #e1e1e1;
+	opacity: 1;
+}
+
+.ts-modal input[type=number] {
+	height: calc(2.25rem + 2px);
+}
+
+.ts-modal input[type=number]:read-only {
+	appearance: textfield;
+}
+
+.ts-modal textarea.ts-input {
+	max-height: none;
+	overflow: auto;
+	resize: vertical;
+}
+
+select.ts-input {
+	height: calc(2.25rem + 2px);
+}
+
+.ts-input:focus-visible,
+.ts-input:focus,
+.ts-modal .ts-input:focus-visible,
+.ts-modal .ts-input:focus {
+	border-color: var(--ts-gray);
+	box-shadow: none;
+	outline: 2px solid var(--ts-blue);
+}
+
+.ts-modal .ts-repeating input[type="text"] {
+	display: inline-block;
+	width: 88%;
+}
+
+.ts-modal label,
+.ts-modal legend {
+	color: var(--ts-navy);
+	display: inline-block;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+
+/*--- TimePicker Inputs ---*/
+
+.bdp-input-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bdp-block {
+	width: 48%;
+}
+
+.bdp-block label {
+	font-size: 0.83em;
+	font-weight: 400;
+	padding-left: 3px;
+}
+
+.bdp-block.hidden {
+	display: none;
+}
+
+/*--- Select2 ---*/
+
+.select2-container--default .select2-selection--multiple.ts-select2-container .select2-selection__choice__remove > span {
+	display: none;
+}
+
+.select2-container--default .select2-selection--multiple.ts-select2-container .select2-selection__choice__remove:after {
+	color: var(--ts-navy);
+	content: 'x';
+	font-family: sans-serif;
+	font-weight: 600;
+}
+
+.select2-container--default .select2-selection--multiple.ts-select2-container .select2-selection__choice__remove {
+	background-color: #e1e1e1;
+	border-right-color: var(--ts-gray);
+	color: var(--ts-navy);
+	height: 100%;
+}
+
+.select2-container--default .select2-selection--multiple.ts-select2-container .select2-selection__choice {
+	background-color: #f5f5f5;
+	border-color: var(--ts-gray);
+}
+
+.select2-container--default .select2-selection--multiple.ts-select2-container {
+	border-color: var(--ts-gray);
+}
+
+/*--------------------------------------------*/
+/*   Modals                                   */
+/*--------------------------------------------*/
+
+.ts-modal {
+	color: var(--ts-navy);
+	display: none;
+}
+
+.ts-modal.is-open {
+	display: block;
+}
+
+.ts-modal-dialog {
+	align-items: center;
+	background: rgb(29 35 39 / 80%);
+	bottom: 0;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	justify-content: center;
+	outline: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: calc(100% - 160px);
+}
+
+.ts-modal-content {
+	background-color: var(--ts-white);
+	border: none;
+	border-radius: .3rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+	max-width: 80%;
+	padding: 20px;
+	outline: 0;
+	overflow-y: auto;
+	width: 500px;
+}
+
+#ts-modal--service-category {
+	overflow-y: auto;
+}
+
+/*--- Modal Header ---*/
+
+.ts-modal-header {
+	align-items: center;
+	border-bottom: 2px solid var(--ts-gray);
+	border-top-left-radius: .3rem;
+	border-top-right-radius: .3rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 20px;
+	padding-bottom: 10px;
+}
+
+.ts-modal-title {
+	color: var(--ts-navy);
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.ts-modal-header p {
+	flex-basis: 100%;
+}
+
+.ts-modal-header .ts-btn.ts-close {
+	padding: 5px;
+}
+
+/*--- Modal Body ---*/
+
+.ts-modal-body {
+	flex: 1 1 auto;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+}
+
+/*--- Modal Footer ---*/
+
+.ts-modal-footer {
+	align-items: center;
+	border-top: none;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+.ts-modal-footer>:not(:first-child) {
+	margin-left: .25rem
+}
+
+.ts-modal-footer>:not(:last-child) {
+	margin-right: .25rem
+}
+
+/*--- Modal Error ---*/
+
+.ts-modal div.ts-appt-error {
+	font-size: 12px;
+	line-height: 1;
+}
+
+.ts-modal input.ts-appt-error,
+.ts-modal .ts-appt-error + .select2-container .select2-selection--single {
+	border-color: var(--ts-navy);
+	outline: 1px solid var(--ts-navy);
+}
+
+/*--- Modal Confirm ---*/
+
+.ts-modal-confirm p,
+.ts-modal-confirm span,
+.ts-modal-confirm-no-refund p {
+	color: var(--ts-navy);
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.ts-modal-confirm.show .ts-modal-dialog {
+	width: 400px;
+}
+
+/*------------------------------------------------*/
+/*   DatePicker                                   */
+/*------------------------------------------------*/
+
+.ts-datepicker {
+	background: var(--ts-white);
+	color: #000;
+	font: 1.1em 'Roboto', sans-serif;
+	padding: 0;
+	width: 17em;
+}
+
+.ts-datepicker .ui-datepicker-header {
+	align-items: center;
+	background: var(--ts-blue);
+	border: none;
+	color: var(--ts-white);
+	display: flex;
+	font-weight: 700;
+	justify-content: space-around;
+	padding: .3em 0;
+}
+
+.ts-datepicker .ui-datepicker-prev span,
+.ts-datepicker .ui-datepicker-next span {
+	background-image: none !important;
+}
+
+.ts-datepicker .ui-datepicker-header .ui-datepicker-next:after,
+.ts-datepicker .ui-datepicker-header .ui-datepicker-prev:after {
+	color: var(--ts-white);
+	font-weight: normal;
+}
+
+.ts-datepicker .ui-datepicker-header .ui-datepicker-next:after {
+	content: '\276F';
+}
+
+.ts-datepicker .ui-datepicker-header .ui-datepicker-prev:after {
+	content: '\276E';
+}
+
+.ts-datepicker .ui-datepicker-prev,
+.ts-datepicker .ui-datepicker-next {
+	cursor: pointer;
+	display: flex;
+}
+
+.ts-datepicker .ui-datepicker-header .ui-state-hover,
+.ts-datepicker .ui-datepicker-header .ui-widget-content .ui-state-hover,
+.ts-datepicker .ui-datepicker-header .ui-widget-header .ui-state-hover,
+.ts-datepicker .ui-datepicker-header .ui-state-focus,
+.ts-datepicker .ui-datepicker-header .ui-widget-content .ui-state-focus,
+.ts-datepicker .ui-datepicker-header .ui-widget-header .ui-state-focus {
+	background: none;
+	border: none;
+	font-weight: 700;
+}
+
+.ts-datepicker td span,
+.ts-datepicker td a.ui-state-default {
+	background: #f8f8f8;
+	color: #333;
+	display: block;
+	font-weight: 700;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+
+.ts-datepicker .ui-datepicker-prev {
+	order: 1;
+}
+
+.ts-datepicker .ui-datepicker-next {
+	order: 3;
+}
+
+.ts-datepicker .ui-datepicker-title {
+	order: 2;
+	text-align: center;
+}
+
+.ts-datepicker td.ui-datepicker-unselectable.ui-state-disabled span {
+	color: #bbb;
+}
+
+.ts-datepicker table {
+	border: solid #ccc;
+	border-collapse: collapse;
+	border-width: 0 2px 2px;
+	font-size: .9em;
+	margin:0 0 .4em;
+	width: 100%;
+}
+
+.ts-datepicker th {
+	border: 0;
+	font-weight: 700;
+	padding: .7em .3em;
+	text-align: center;
+}
+
+.ts-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+
+.ts-datepicker .ui-state-default,
+.ts-datepicker .ui-widget-header .ui-state-default {
+	color: #555;
+	font-weight: normal;
+}
+
+.ts-datepicker .ui-state-active {
+	background-color: #ddd!important;
+	font-weight: normal;
+}
+
+/*------------------------------------------------*/
+/*   Appearance Page                              */
+/*------------------------------------------------*/
+
+.ts-px-block {
+	align-items: center;
+	background-color: #ddd;
+	border-radius: 0 3px 3px 0;
+	display: flex;
+	font-size: 14px;
+	padding: 3px 5px 3px 4px;
+}
+
+.ts-unit-wrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ts-css-group-wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: fit-content;
+}
+
+.ts-css-group-wrapper > * {
+	padding-right: 5px;
+}
+
+.ts-css-group-wrapper .select2 {
+	max-width: 150px;
+	min-width: 150px;
+	width: 150px;
+}
+
+.ts-settings-row .ts-css-group-wrapper .sp-preview {
+	width: 142px;
+}
+
+.ts-settings-form .ts-css-group-wrapper .ts-number,
+.ts-settings-form .ts-css-group-wrapper input[type=number] {
+	max-width: 60px;
+}
+
+#ts-appearance-form td > .ts-unit-wrapper input,
+#ts-appearance-form td > .ts-unit-wrapper input[type=number] {
+	max-width: 100%;
+	width: 360px;
+}
+
+#ts-appearance-form td > .select2,
+#ts-appearance-form td > .select2 .ts-appearance-full-width {
+	max-width: 100%;
+	width: 385px!important;
+}
+
+/*--- Color Pickers ---*/
+
+input.ts-color-input.spectrum.with-add-on {
+	max-width: 110px;
+}
+
+.ts-settings-row td > .sp-original-input-container .ts-color-input {
+	max-width: 100%;
+	width: 350px;
+}
+
+.ts-spectrum .sp-input {
+	font-family: 'Roboto', sans-serif;
+	min-height: 1px;
+}
+
+.ts-spectrum .sp-picker-container .sp-choose,
+.ts-spectrum .sp-picker-container .sp-choose:hover {
+	background-color: var(--ts-navy)!important;
+	border-radius: 0;
+	color: var(--ts-white);
+	font-weight: 500;
+	opacity: 1;
+}
+
+.ts-spectrum .sp-picker-container .sp-cancel,
+.ts-spectrum .sp-picker-container .sp-cancel:hover {
+	color: var(--ts-navy)!important;
+	opacity: 1;
+}
+
+.ts-spectrum {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*--- Legacy Spectrum Styles ---*/
+
+.ts-sp-replacer .sp-preview-inner, 
+.ts-sp-replacer .sp-alpha-inner, 
+.ts-sp-replacer .sp-thumb-inner {
+	height: 33px;
+}
+
+.ts-sp-replacer .sp-dd {
+	display: none;
+}
+
+.ts-sp-replacer.sp-replacer {
+	background: transparent;
+	border: solid 1px var(--ts-gray);
+	border-radius: 0;
+	height: 33px;
+	padding: 0;
+	width: auto;
+}
+
+.ts-sp-replacer.sp-replacer:hover,
+.ts-sp-replacer.sp-replacer.sp-active {
+	border-color: #bbb;
+}
+
+.ts-sp-replacer .sp-preview {
+	border: none;
+	height: 33px;
+	margin: 0;
+	width: 383px;
+}
+
+/*------------------------------------------------*/
+/*   Info Icons                                   */
+/*------------------------------------------------*/
+
+.ts-settings-form .ts-hdr-w-info {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.ts-info-wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+#ts-business-hours-form .ts-info-wrapper,
+#ts-payment-methods-form .ts-info-wrapper {
+	background-color: var(--ts-offwhite);
+	margin-top: 20px;
+}
+
+.ts-info-icon {
+	color: var(--ts-blue);
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.ts-info-icon:hover,
+.ts-info-icon:focus-visible {
+	color: var(--ts-navy);
+	outline: none;
+}
+
+.ts-info-toggle {
+	display: none;
+}
+
+/*------------------------------------------------*/
+/*   Miscellaneous                                */
+/*------------------------------------------------*/
+
+body[class*="timeslot"] ::selection {
+	background: rgba(67, 134, 252, 0.5);
+}
+
+body[class*="timeslot"] ::-moz-selection {
+	background: rgba(67, 134, 252, 0.5);
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+/*------------------------------------------------*/
+/*   Media Queries                                */
+/*------------------------------------------------*/
+
+@media (max-width:1000px){
+	/*--- Dashboard Page ---*/
+	.ts-dashboard a p {
+		display: none;
+	}
+}
+
+@media (max-width:960px){
+	.ts-success-msg{
+		width: calc(100% - 36px);
+	}
+	/*--- Modals ---*/
+	.ts-modal-dialog {
+		width: calc(100% - 36px);
+	}
+}
+
+@media (min-width:782px){
+	.ts-settings-row select.ts-unit-select {
+		min-width: 96px;
+	}
+	/*--- Data Tables ---*/
+	.ts-datatable .ts-select-all,
+	.ts-datatable .select-checkbox {
+		height: 1rem;
+		margin: 0 auto;
+		text-align: center;
+		width: 1rem;
+	}
+}
+
+@media (max-width:782px){
+	/*--- Data Tables ---*/
+	.ts-datatable .ts-select-all,
+	.ts-datatable .select-checkbox {
+		height: 1rem;
+		margin: 0 auto;
+		text-align: center;
+		width: 1rem;
+	}
+	/*--- Settings Forms ---*/
+	.ts-settings-form .ts-settings-row label:not(.ts-px-block) {
+		display: block;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	.ts-settings-form input[type=text],
+	.ts-settings-form input[type=number],
+	.ts-settings-form input[type=email],
+	.ts-settings-form input[type=password],
+	.ts-settings-form input[type=url],
+	.ts-settings-form input[type=tel],
+	.ts-settings-form textarea {
+		font-size: 14px;
+	}
+	/*--- Business Hours ---*/
+	.ts-settings-group .ts-hours-wrapper .ts-timepicker {
+		padding: 3px 5px!important;
+		width: 75px;
+	}
+	/*---Save Success ---*/
+	.ts-success-msg{
+		width: 100%;
+	}
+	/*--- Modals ---*/
+	.ts-modal-content {
+		padding: 10px;
+	}
+	.ts-modal-header {
+		margin: 10px;
+	}
+	.ts-modal-body {
+		margin: 0px;
+	}
+	.ts-modal-dialog {
+		width: 100%;
+	}
+}
+
+@media (max-width:640px){
+	/*--- Dashboard Page ---*/
+	.ts-dashboard {
+		grid-auto-rows: auto;
+	}
+	/*--- Data Tables ---*/
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter {
+		background: var(--ts-offwhite);
+		padding: 8px 8px 10px;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter input {
+		font-size: 14px;
+		line-height: 1;
+		margin: 5px 5px 5px 0;
+		min-height: 1px;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter label {
+		justify-content: center;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_filter i.dashicons.dashicons-search {
+		align-items: center;
+		background: var(--ts-gray);
+		height: auto;
+		margin-right: 0;
+		padding: 5px 5px 6px;
+		width: auto;
+	}
+	.ts-datatable-wrapper .dt-buttons {
+		display: none;
+	}
+	.ts-datatable tfoot .ts-btn.ts-delete-multi span {
+		display: none;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper {
+		padding-top: 10px;
+	}
+	/*--- Navigation Tabs ---*/
+	.ts-nav.nav-tab-wrapper ul {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin: 0;
+		overflow-x: auto;
+		scrollbar-color: var(--ts-blue) var(--ts-gray);
+		scrollbar-width: thin;
+		width: 100%;
+	}
+	.ts-nav.nav-tab-wrapper ul li {
+		align-items: center;
+		align-self: stretch;
+		display: flex;
+		line-height: 1.3;
+		margin-bottom: 0;
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+	}
+	.ts-nav.nav-tab-wrapper ul li a {
+		margin: 2px 5px 0;
+	}
+	.ts-nav.nav-tab-wrapper {
+		border-bottom: none;
+	}
+	/*--- Settings Forms ---*/
+	.ts-settings-group .ts-repeating .ts-holiday-date {
+		max-width: 150px;
+	}
+	#ts-business-hours-form {
+		padding: 10px;
+	}
+	.ts-btn,
+	.ts-settings-form .ts-btn,
+	.ts-btn.dt-button,
+	.ts-btn.button,
+	.ts-settings-group .ts-repeat,
+	.ts-btn:focus:not(:disabled),
+	.ts-btn:active:not(:disabled),
+	#ts-media-confirm .ts-btn {
+		font-size: 14px;
+		padding: 4px 10px;
+	}
+	.wp-core-ui .ts-settings-row .ts-btn.ts-remove-img-btn .dashicons {
+		height: 23px;
+	}
+}
+
+@media (max-width:480px){
+	/*--- Header --- */
+	.timeslot-header {
+		justify-content: center;
+	}
+	/*--- Modals ---*/
+	#ts-modal-edit--service .ts-hidden-id + .ts-form-row .ts-width-50,
+	#ts-modal-edit--staff .ts-hidden-id + .ts-form-row .ts-width-50 {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	/*--- Datatables ---*/
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button {
+		padding: 0.2em 0.6em;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button span {
+		display: none;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .paginate_button i {
+		display: inline-block;
+	}
+	.ts-datatable-wrapper .dataTables_wrapper .dataTables_paginate .ellipsis {
+		padding: 0;
+	}
+	/*--- Appearance ---*/
+	.ts-settings-row .ts-css-group-wrapper .select2 {
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+	}
+	.ts-settings-form .ts-unit-wrapper input[type=number] {
+		max-width: calc(100% - 21px);
+		width: calc(100% - 21px);
+	}
+	.ts-settings-form .ts-css-group-wrapper {
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.ts-css-group-wrapper > * {
+		padding-right: 0;
+		padding-bottom: 14px;
+	}
+	input.ts-color-input.spectrum.with-add-on {
+		max-width: none;
+	}
+	#ts-appearance-form table {
+		table-layout: fixed;
+	}
+	/*--- Settings Forms ---*/
+	.ts-settings-form .form-table th {
+		padding: 20px 2px 0;
+	}
+	.ts-settings-form h1,
+	.ts-settings-form .ts-subtitle {
+		text-align: center;
+	}
+	/*--- Business Hours ---*/
+	.ts-hours-wrapper label,
+	.ts-settings-group .ts-repeating label {
+		font-size: 12px;
+	}
+	.ts-hours-wrapper .ts-day-label {
+		display: flex;
+		flex-shrink: 0;
+		font-size: 14px;
+		width: 30px;
+	}
+	.ts-hours-wrapper {
+		border-bottom: 2px solid #d9d9d9;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+	}
+	.ts-workday-wrapper {
+		align-items: start;
+		display: flex;
+		flex-direction: column;
+	}
+	.ts-time-wrapper {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.ts-check-wrapper {
+		align-items: start;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 10px;
+	}
+	.ts-hours-wrapper .ts-break-label {
+		font-size: 13px;
+		margin-top: 1em;
+		width: 100%;
+	}
+	.ts-settings-group .ts-hours-wrapper .ts-timepicker {
+		padding: 3px!important;
+		width: calc(50% - 30px);
+	}
+	.ts-settings-group .ts-hours-wrapper .ts-checkmark {
+		left: 1px;
+	}
+	.ts-checkmark {
+		top: 1px;
+	}
+}
+
+@media (max-width:400px){
+	.ts-nav .nav-tab {
+		font-size: 11px;
+	}
+}

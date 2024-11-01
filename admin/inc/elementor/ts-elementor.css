@@ -1,0 +1,31 @@
+/**
+ * Styles for Elementor editor
+ *
+ * @link https://timeslotplugins.com
+ * @package Time Slot
+ * @since 1.0.1
+ *
+ */
+
+ .elementor-panel .ts-icon::after {
+	border: 1px solid #e0e1e3;
+	content: 'TIME SLOT';
+	display: inline-block;
+	font-size: calc(11px + 5%);
+	font-style: normal;
+	padding: 2px 10%;
+	text-align: center;
+}
+
+.elementor-panel .elementor-element:hover .ts-icon:after {
+	border-color: inherit;
+}
+
+body .elementor-element-edit-mode .ts-form-wrapper .ts-form .ts-fieldset .ts-btn,
+body .elementor-element-edit-mode .ts-form-wrapper .ts-form .ts-fieldset .ts-checkbox-label {
+	pointer-events: none;
+}
+
+body .elementor-element-edit-mode .ts-form-wrapper .ts-form .ts-fieldset .ts-coupon-code {
+	display: none;
+}

@@ -1,0 +1,44 @@
+/**
+ * Styles for Beaver Builder form
+ *
+ * @link https://timeslotplugins.com
+ *
+ * @package Time Slot
+ * @since 1.1.9
+ *
+ */
+
+/*- Labels ---*/
+.ts-form-wrapper label {
+	display: block;
+	margin-top: 1em;
+	padding: 0 0 0.25em;
+}
+
+/*- Inputs ---*/
+.ts-form-wrapper input[type=text],
+.ts-form-wrapper input[type=email],
+.ts-form-wrapper input[type=tel],
+body .ts-form-wrapper select {
+	padding: 0.5em;
+	width: 100%;
+}
+
+/*- Form ---*/
+fieldset.ts-fieldset {
+	border: none;
+	display:none;
+	margin: 0;
+}
+
+/*- Buttons ---*/
+body .ts-form-wrapper .ts-form .ts-fieldset .ts-btn,
+body .ts-form-wrapper .ts-form .ts-fieldset button,
+body .ts-form-wrapper .ts-form .ts-fieldset #ts-btn-submit {
+	display: inline-block;
+	line-height: 1;
+	margin-bottom:20px;
+	padding: 0.5em 1em;
+	text-align: center;
+	width: auto;
+}

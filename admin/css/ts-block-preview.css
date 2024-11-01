@@ -1,0 +1,140 @@
+/**
+ * Styles for appointment form in block preview
+ *
+ * @link https://timeslotplugins.com
+ *
+ * @package Time Slot
+ * @since 1.0.0
+ *
+ */
+
+/*--- Button ---*/
+body .ts-form-wrapper .ts-form button {
+	cursor:pointer;
+	display: flex;
+	opacity: 1;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+/*--- Labels ---*/
+.ts-form-wrapper label,
+.ts-form-wrapper .ts-block-select label.components-input-control__label {
+	display: block;
+	margin-bottom: 0;
+	margin-top: 1em;
+	padding: 0 0 0.25em;
+}
+
+/*--- Inputs ---*/
+.ts-form-wrapper input[type=text],
+body .ts-form-wrapper select {
+	line-height: normal;
+	width: 100%;
+}
+
+.ts-form-wrapper input:disabled,
+.ts-form-wrapper .select2-container--default.select2-container--disabled .select2-selection--single {
+	background-color: inherit;
+}
+
+.ts-block-input input[type="text"] {
+	min-height: 33px;
+	width: 100%;
+}
+
+/*--- Checkbox ---*/
+.ts-form-wrapper .ts-checkbox-label,
+.ts-form-wrapper .ts-block-checkbox .components-base-control__field {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	padding: 0;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.ts-form-wrapper .ts-block-checkbox label {
+	margin: 0;
+	padding: 0;
+}
+
+.ts-form-wrapper .ts-block-checkbox {
+	padding: 2em 0;
+}
+
+.ts-form-wrapper .ts-block-checkbox input[type=checkbox] {
+	opacity: 1;
+}
+
+/*--- Select2 ---*/
+.ts-form-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 31px !important;
+}
+
+.ts-form-wrapper .select2-container .select2-selection--single {
+	height: auto!important;
+}
+
+.ts-form-wrapper .select2-selection__arrow {
+	width: 10%!important;
+}
+
+.ts-form-wrapper .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
+	opacity: 0.5;
+}
+
+.ts-form span.select2 {
+	width: 100%!important;
+}
+
+.select2-container--default .ts-select2 .select2-results__option--selected {
+	opacity: 0.5;
+}
+
+/*--- Preview Select ---*/
+.ts-block-select .select2 + span.components-input-control__suffix {
+	display: none;
+}
+
+body .ts-form-wrapper .ts-block-select .components-select-control__input {
+	box-sizing: content-box;
+	max-width: 100%;
+	opacity: 1;
+}
+
+body .ts-block-select .components-input-control__container .components-input-control__backdrop {
+	border: none;
+}
+
+.components-flex.components-select-control.ts-block-select {
+	height: auto;
+}
+
+body .ts-form-wrapper select {
+	box-shadow: none!important;
+}
+
+.ts-block-select select + span.components-input-control__suffix > div > div {
+	margin: 0;
+}
+
+.ts-block-select select + span.components-input-control__suffix > div {
+	padding: 6px;
+}
+
+/*--- Form ---*/
+.ts-form-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 3%;
+}
+
+.ts-form {
+	width:100%;
+}

@@ -1,0 +1,13 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "moneyphp/money": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {"TimeSlot\\": "src/"}
+    }
+}

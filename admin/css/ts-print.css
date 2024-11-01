@@ -1,0 +1,41 @@
+/**
+ * Print styles for tables
+ *
+ * @link https://timeslotplugins.com
+ *
+ * @package Time Slot
+ * @since 1.0.0
+ *
+ */
+
+.dt-print-view h1 {
+	font-size: 12pt;
+	margin: 0 0 30px;
+}
+
+.ts-datatable {
+	border-collapse: collapse!important;
+	font-size: 10pt;
+}
+
+.dt-print-view h1 + div {
+	display: none!important;
+}
+
+.ts-datatable thead th {
+	border: 1px solid #ccc;
+	padding-left: 10px!important;
+	text-align: left;
+}
+
+.ts-datatable tbody {
+	border: 1px solid #ccc!important;
+}
+
+.ts-datatable tbody tr {
+	border-bottom: 1px solid #ccc!important;
+}
+
+.ts-datatable tbody tr td{
+	border-right: 1px solid #ccc!important;
+}

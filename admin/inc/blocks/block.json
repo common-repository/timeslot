@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "timeslot/booking-form",
+	"title": "Time Slot",
+	"description": "Add the Time Slot booking form to your page or post",
+	"category": "embed",
+	"icon": "calendar-alt",
+	"keywords": [ "calendar", "schedule", "book" ],
+	"textdomain": "timeslot",
+	"example": {
+		"viewportWidth": 1000
+	},
+	"editorScript": "timeslot-block",
+	"editorStyle": "ts-block-preview"
+}
